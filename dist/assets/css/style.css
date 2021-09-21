@@ -32,9 +32,6 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  /*
-  border: 1px solid red;
-*/
 }
 
 body {
@@ -370,75 +367,77 @@ template {
     display: none;
 }
 
-@font-face {
-    font-family: "Muli-Bold";
-  src: url("/assets/fonts/woff2/Muli-Bold.woff2") format("woff2"), url("/assets/fonts/woff/Muli-Bold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Muli-BoldItalic";
-  src: url("/assets/fonts/woff2/Muli-BoldItalic.woff2") format("woff2"), url("/assets/fonts/woff/Muli-BoldItalic.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Muli-ExtraBold";
-  src: url("/assets/fonts/woff2/Muli-ExtraBold.woff2") format("woff2"), url("/assets/fonts/woff/Muli-ExtraBold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Muli-Italic";
-  src: url("/assets/fonts/woff2/Muli-Italic.woff2") format("woff2"), url("/assets/fonts/woff/Muli-Italic.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Muli-Regular";
-  src: url("/assets/fonts/woff2/Muli-Regular.woff2") format("woff2"), url("/assets/fonts/woff/Muli-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Muli-SemiBoldItalic";
-  src: url("/assets/fonts/woff2/Muli-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/woff/Muli-SemiBoldItalic.woff") format("woff");
-}
-
-@font-face {
-    font-family: "MyriadPro";
-  src: url("/assets/fonts/woff2/MyriadPro-Regular.woff2") format("woff2"), url("/assets/fonts/woff/MyriadPro-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Schwabacher";
-  src: url("/assets/fonts/woff2/Schwabacher.woff2") format("woff2"), url("/assets/fonts/woff/Schwabacher.woff") format("woff");
+.header .container {
+    padding: 0 15px;
 }
 
 .header {
-    background-image: url(./../images/.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    background-color: #fff;
 }
 
-.header__wrapper {
-    max-width: 1720px;
-    width: 100%;
-    height: 315px;
-    padding-top: 90px;
+.header__inner {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    position: relative;
+    height: 60px;
 }
 
-.header__title {
-    font-size: 24px;
+.header__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-.header__link {
+.header__logo {
+    margin-right: 45px;
+}
+
+@media screen and (min-width: 576px) {
+    .header__logo {
+        margin-right: 36px;
+    }
+}
+
+.header__phone-city {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    color: #5286EC;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 576px) {
+    .header__phone-city {
+        display: none;
+    }
+}
+
+.header__phone-number {
+    text-decoration: none;
+    color: #37373f;
+}
+
+@media screen and (min-width: 575px) {
+    .header__phone-number {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .header__phone-number {
+        display: initial;
+    }
+}
+
+.header span {
+    color: #b3b3b3;
+}
+
+.header__user {
     width: 20px;
     height: 20px;
 }

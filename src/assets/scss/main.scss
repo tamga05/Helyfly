@@ -1,6 +1,3 @@
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
-
 *,
 *::after,
 *::before {
@@ -18,14 +15,10 @@ body {
 @import "./base/normalize.scss";
 
 
-//@import "./common/container";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
 
 
-//@import "./abstracts/variables";
-//@import "./abstracts/mixins";
-
-
-@import "./components/fonts";
 //@import "./components/logo";
 //@import "./components/btn";
 //@import "./components/title";
@@ -37,4 +30,4 @@ body {
 //@import "./layout/footer";
 
 
-@import "./media/media-querys";
+//@import "./media/media-querys";

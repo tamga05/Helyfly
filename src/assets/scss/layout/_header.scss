@@ -1,30 +1,63 @@
 .header {
-    background-image: url(./../images/.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    background-color: $primaryColor;
 
-    &__wrapper {
-        max-width: 1720px;
-        width: 100%;
-        height: 315px;
-        padding-top: 90px;
+    .container {
+        @extend %container;
+    }
+
+    &__inner {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        position: relative;
+        height: 60px;
     }
 
-    &__title {
-        font-size: 24px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
     }
 
-    &__link {
+    &__logo {
+        margin-right: 45px;
+
+        @media screen and (min-width: 576px) {
+            margin-right: 36px;
+        }
+    }
+
+    &__phone-city {
+        // color: $linkColor;
+        // font-size: 14px;
+        // font-weight: 400;
+        // line-height: 17.07px;
+        @include text(14px, 400, 17.07px, $linkColor);
+        text-decoration: none;
+
+        @media screen and (min-width: 576px) {
+            display: none;
+        }
+    }
+
+    &__phone-number {
+        text-decoration: none;
+        color: rgba(55, 55, 63, 1);
+
+        @media screen and (min-width: 100px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 576px) {
+            display: initial;
+        }
+    }
+
+    span {
+        color: rgba(179, 179, 179, 1);
+    }
+
+    &__user {
         width: 20px;
         height: 20px;
     }
-
 
 }
