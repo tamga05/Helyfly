@@ -10,6 +10,10 @@
         justify-content: space-between;
         align-items: center;
         height: 60px;
+
+        @media screen and (min-width: 768px) {
+            height: 100px;
+        }
     }
 
     &__wrapper {
@@ -22,6 +26,10 @@
 
         @media screen and (min-width: 576px) {
             margin-right: 36px;
+        }
+
+        @media screen and (min-width: 768px) {
+            height: 23px;
         }
     }
 

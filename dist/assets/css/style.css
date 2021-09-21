@@ -371,6 +371,12 @@ template {
     padding: 0 15px;
 }
 
+@media screen and (min-width: 576px) {
+    .header .container {
+        padding: 0 35px;
+    }
+}
+
 .header {
     background-color: #fff;
 }
@@ -421,7 +427,7 @@ template {
     color: #37373f;
 }
 
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 100px) {
     .header__phone-number {
         display: none;
     }

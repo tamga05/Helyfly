@@ -334,6 +334,9 @@ template {
   @media screen and (min-width: 576px) {
     .header .container {
       padding: 0 35px; } }
+  @media screen and (min-width: 768px) {
+    .header .container {
+      padding: 0 50px; } }
 
 .header {
   background-color: #fff; }
@@ -342,6 +345,9 @@ template {
     justify-content: space-between;
     align-items: center;
     height: 60px; }
+    @media screen and (min-width: 768px) {
+      .header__inner {
+        height: 100px; } }
   .header__wrapper {
     display: flex;
     align-items: center; }
@@ -350,6 +356,9 @@ template {
     @media screen and (min-width: 576px) {
       .header__logo {
         margin-right: 36px; } }
+    @media screen and (min-width: 768px) {
+      .header__logo {
+        height: 23px; } }
   .header__phone-city {
     font-size: 14px;
     font-weight: 400;
