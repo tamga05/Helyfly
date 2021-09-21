@@ -383,8 +383,22 @@ template {
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .header .container {
+        padding: 0;
+        width: 1140px;
+        margin: 0 auto;
+    }
+}
+
 .header {
     background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .header__inner {
@@ -464,4 +478,10 @@ template {
 .header__user {
     width: 20px;
     height: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+    .header__user {
+        display: none;
+    }
 }
