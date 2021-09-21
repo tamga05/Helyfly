@@ -377,6 +377,12 @@ template {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .header .container {
+        padding: 0 50px;
+    }
+}
+
 .header {
     background-color: #fff;
 }
@@ -389,6 +395,12 @@ template {
     -ms-flex-align: center;
     align-items: center;
     height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+    .header__inner {
+        height: 100px;
+    }
 }
 
 .header__wrapper {
@@ -405,6 +417,12 @@ template {
 @media screen and (min-width: 576px) {
     .header__logo {
         margin-right: 36px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__logo {
+        height: 23px;
     }
 }
 
