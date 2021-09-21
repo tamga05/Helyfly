@@ -1,7 +1,13 @@
 .main-block {
     background-color: silver;
     color: $primaryColor;
-    border: 1px solid red;
+    background-image: url(./../images/main-block/helimain.svg);
+    background-size: cover;
+    background-position-x: 62%;
+
+    @media screen and (min-width: 768px) {
+        background-position: center;
+    }
 
     .container {
         @extend %container;
@@ -12,12 +18,28 @@
         flex-direction: column;
         justify-content: center;
         height: 655px;
+
+        @media screen and (min-width: 768px) {
+            height: 840px;
+        }
+
     }
 
     &__title{
         @include text(32px, 700, 39px, $primaryColor);
         max-width: 247px;
         margin-top: -6px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 596px;
+            font-size: 40px;
+            line-height: 49px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 887px;
+            width: 100%;
+        }
 
         span {
             color: $accentColor;
@@ -32,7 +54,7 @@
         margin: 36px 0 14px;
         display: flex;
         justify-content: space-around;
-        padding: 6px 15px;
+        padding: 11px 15px;
         margin-left: -5px;
     }
 
@@ -41,19 +63,20 @@
         flex-direction: column;
     }
 
-    &__priceLabel{
+    &__price-label{
         @include text(18px, 400, inherit,inherit);
+        margin-bottom: 4px;
     }
 
     &__price {
-        @include text(30px, 800, inherit, inherit);
+        @include text(35px, 800, inherit, inherit);
     }
 
     &__percent {
         border-radius: 50%;
         filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.25)) drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
         max-height: 47px;
-        margin-top: 10px;
+        margin-top: 5px;
         transform: translateX(4px);
     }
 
