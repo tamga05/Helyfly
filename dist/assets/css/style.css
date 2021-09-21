@@ -1,3 +1,16 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -419,4 +432,13 @@ template {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
+}
+
+.header__title {
+    font-size: 24px;
+}
+
+.header__link {
+    width: 20px;
+    height: 20px;
 }
