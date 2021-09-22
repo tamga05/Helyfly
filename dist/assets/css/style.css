@@ -652,7 +652,10 @@ template {
     line-height: 34.15px;
     color: #37373F;
     text-align: center;
+    -ms-flex-item-align: center;
+    align-self: center;
     width: 160px;
+    display: none;
 }
 
 .photosession__text {
@@ -673,20 +676,94 @@ template {
 
 .photosession__item-time {
     margin-bottom: 20px;
+    margin-left: 45px;
+    position: relative;
+}
+
+.photosession__item-time::before {
+    content: "";
+    background-image: url(./../images/photosession/clock.svg);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -55px;
+    top: -7px;
+    margin-left: 12px;
 }
 
 .photosession__item-photo {
     margin-bottom: 15px;
+    margin-left: 45px;
+    position: relative;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+}
+
+.photosession__item-photo::before {
+    content: "";
+    background-image: url(./../images/photosession/camera.svg);
+    width: 35px;
+    height: 28px;
+    position: absolute;
+    left: -55px;
+    top: -10px;
+    margin-left: 12px;
 }
 
 .photosession__item-geo {
     margin-bottom: 15px;
+    margin-left: 45px;
+    position: relative;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+}
+
+.photosession__item-geo::before {
+    content: "";
+    background-image: url(./../images/photosession/geotag.svg);
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    left: -55px;
+    top: -10px;
+    margin-left: 12px;
 }
 
 .photosession__item-ask {
-    margin-bottom: 55px;
+    margin-bottom: 90px;
+    margin-left: 45px;
+    position: relative;
+    -webkit-transform: translateY(45px);
+    transform: translateY(45px);
+}
+
+.photosession__item-ask::before {
+    content: "";
+    background-image: url(./../images/photosession/ask.svg);
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    left: -55px;
+    top: -10px;
+    margin-left: 12px;
 }
 
 .photosession__item-comment {
-    margin: 15px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.photosession__item-comment::before {
+    content: "";
+    background-image: url(./../images/photosession/cup.svg);
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    left: -55px;
+    top: -10px;
+    margin-left: 12px;
+}
+
+hr {
+    color: #C7C7C7;
 }

@@ -526,8 +526,8 @@ template {
   text-decoration: none; }
 
 .photosession__item-time {
-  margin-left: 45px;
   margin-bottom: 20px;
+  margin-left: 45px;
   position: relative; }
   .photosession__item-time::before {
     content: "";
@@ -540,9 +540,10 @@ template {
     margin-left: 12px; }
 
 .photosession__item-photo {
-  margin-left: 45px;
   margin-bottom: 15px;
-  position: relative; }
+  margin-left: 45px;
+  position: relative;
+  transform: translateY(15px); }
   .photosession__item-photo::before {
     content: "";
     background-image: url(./../images/photosession/camera.svg);
@@ -554,12 +555,61 @@ template {
     margin-left: 12px; }
 
 .photosession__item-geo {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-left: 45px;
+  position: relative;
+  transform: translateY(30px); }
+  .photosession__item-geo::before {
+    content: "";
+    background-image: url(./../images/photosession/geotag.svg);
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    left: -55px;
+    top: -10px;
+    margin-left: 12px; }
 
 .photosession__item-ask {
-  margin-bottom: 55px; }
+  margin-bottom: 90px;
+  margin-left: 45px;
+  position: relative;
+  transform: translateY(45px); }
+  .photosession__item-ask::before {
+    content: "";
+    background-image: url(./../images/photosession/ask.svg);
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    left: -55px;
+    top: -10px;
+    margin-left: 12px; }
 
 .photosession__item-comment {
-  margin: 15px 0; }
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 45px;
+  position: relative;
+  transform: translateY(-10px); }
+  .photosession__item-comment::before {
+    content: "";
+    background-image: url(./../images/photosession/cup.svg);
+    width: 37px;
+    height: 41px;
+    position: absolute;
+    left: -55px;
+    top: -4px;
+    margin-left: 12px; }
+  .photosession__item-comment::after {
+    content: "";
+    background-image: url(./../images/photosession/starblock.svg);
+    width: 118px;
+    height: 17px;
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    margin-left: 12px; }
+
+hr {
+  color: #C7C7C7; }
 
 /*# sourceMappingURL=style.min.css.map */
