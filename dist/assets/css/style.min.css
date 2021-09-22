@@ -9,6 +9,9 @@ html,
 body {
   font-family: 'Montserrat', sans-serif; }
 
+body {
+  min-width: 320px; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -379,7 +382,7 @@ template {
   .header__phone-number {
     text-decoration: none;
     color: #37373f; }
-    @media screen and (min-width: 100px) {
+    @media screen and (min-width: 80px) {
       .header__phone-number {
         display: none; } }
     @media screen and (min-width: 576px) {
@@ -397,7 +400,7 @@ template {
 .main-block {
   background-color: silver;
   color: #fff;
-  background-image: url(./../images/main-block/helimain.svg);
+  background-image: url(./../images/main-block/helicopter.jpg);
   background-size: cover;
   background-position-x: 62%; }
   @media screen and (min-width: 768px) {

@@ -13,6 +13,11 @@ body {
 }
 
 
+body {
+    min-width: 320px;
+}
+
+
 @import "./base/normalize.scss";
 
 
@@ -29,4 +34,5 @@ body {
 
 @import "./layout/header";
 @import "./layout/main-block";
+@import "./layout/photosession";
 //@import "./layout/footer";
