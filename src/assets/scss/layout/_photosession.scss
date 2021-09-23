@@ -14,7 +14,7 @@
     &__title-image {
         font-size: 28px;
         font-weight: 400;
-        line-height: 34.15px;
+        line-height: 34.13px;
         color: $textColor;
         text-align: center;
         width: 160px;
@@ -22,10 +22,11 @@
     }
 
     &__image {
-        max-width: 290px;
+        max-width: 100%;
         width: 100%;
         border: 1px solid #000000;
         border-radius: 4px;
+        object-fit: cover;
     }
 
     &__block-text {
@@ -37,7 +38,7 @@
     &__title-text {
         font-size: 28px;
         font-weight: 400;
-        line-height: 34.15px;
+        line-height: 34.13px;
         color: $textColor;
         text-align: center;
         align-self: center;
@@ -47,14 +48,16 @@
 
     &__text {
         font-size: 14px;
+        font-weight: 400;
         line-height: 20.48px;
         color: $textColor;
         width: 245px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 
     &__list {
         list-style-type: none;
+        width: 255px;
     }
 
     &__link {
@@ -62,9 +65,14 @@
     }
 
     &__item-time {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20.48px;
+        color: $textColor;
+        position: relative;
         margin-bottom: 20px;
         margin-left: 45px;
-        position: relative;
+
 
         &::before {
             content: "";
@@ -72,7 +80,7 @@
             width: 32px;
             height: 32px;
             position: absolute;
-            left: -55px;
+            left: -57px;
             top: -7px;
             margin-left: 12px;
         }
@@ -80,9 +88,13 @@
     }
 
     &__item-photo {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20.48px;
+        color: $textColor;
+        position: relative;
         margin-bottom: 15px;
         margin-left: 45px;
-        position: relative;
         transform: translateY(15px);
 
         &::before {
@@ -91,7 +103,7 @@
             width: 35px;
             height: 28px;
             position: absolute;
-            left: -55px;
+            left: -57px;
             top: -10px;
             margin-left: 12px;
         }
@@ -99,9 +111,13 @@
     }
 
     &__item-geo {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20.48px;
+        color: $textColor;
+        position: relative;
         margin-bottom: 15px;
         margin-left: 45px;
-        position: relative;
         transform: translateY(30px);
 
         &::before {
@@ -110,7 +126,7 @@
             width: 33px;
             height: 33px;
             position: absolute;
-            left: -55px;
+            left: -57px;
             top: -10px;
             margin-left: 12px;
         }
@@ -118,9 +134,13 @@
     }
 
     &__item-ask {
-        margin-bottom: 90px;
-        margin-left: 45px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20.48px;
+        color: $textColor;
         position: relative;
+        margin-bottom: 80px;
+        margin-left: 45px;
         transform: translateY(45px);
 
         &::before {
@@ -129,7 +149,7 @@
             width: 31px;
             height: 31px;
             position: absolute;
-            left: -55px;
+            left: -57px;
             top: -10px;
             margin-left: 12px;
         }
@@ -137,10 +157,14 @@
     }
 
     &__item-comment {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 45px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20.48px;
+        color: $textColor;
         position: relative;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        margin-left: 45px;
         transform: translateY(-10px);
 
         &::before {
@@ -149,8 +173,8 @@
             width: 37px;
             height: 41px;
             position: absolute;
-            left: -55px;
-            top: -4px;
+            left: -57px;
+            top: 0;
             margin-left: 12px;
         }
 
@@ -161,7 +185,7 @@
             height: 17px;
             position: absolute;
             left: -10px;
-            top: 20px;
+            top: 21px;
             margin-left: 12px;
         }
 
