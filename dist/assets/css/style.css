@@ -611,7 +611,7 @@ template {
     transform: translateY(-6px);
 }
 
-.photosession__block-image {
+.photosession__image-block {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -619,9 +619,10 @@ template {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 40px;
+    position: relative;
 }
 
-.photosession__title-image {
+.photosession__image-title {
     font-size: 28px;
     font-weight: 400;
     line-height: 34.13px;
@@ -640,7 +641,23 @@ template {
     object-fit: cover;
 }
 
-.photosession__block-text {
+.photosession__image-link {
+    text-decoration: none;
+}
+
+.photosession__image-link__link {
+    display: none;
+}
+
+.photosession__image-pic {
+    width: 12px;
+    height: 17px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.photosession__text-block {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -648,7 +665,7 @@ template {
     padding-top: 30px;
 }
 
-.photosession__title-text {
+.photosession__text-title {
     font-size: 28px;
     font-weight: 400;
     line-height: 34.13px;
@@ -669,9 +686,16 @@ template {
     margin-bottom: 30px;
 }
 
+@media screen and (min-width: 576px) {
+    .photosession__text {
+        width: 445px;
+        font-size: 18px;
+        line-height: 26.33px;
+    }
+}
+
 .photosession__list {
     list-style-type: none;
-    width: 285px;
 }
 
 .photosession__link {
@@ -683,9 +707,9 @@ template {
     font-weight: 500;
     line-height: 20.48px;
     color: #37373F;
+    position: relative;
     margin-bottom: 20px;
     margin-left: 45px;
-    position: relative;
 }
 
 .photosession__item-time::before {
@@ -704,9 +728,9 @@ template {
     font-weight: 500;
     line-height: 20.48px;
     color: #37373F;
+    position: relative;
     margin-bottom: 15px;
     margin-left: 45px;
-    position: relative;
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
 }
@@ -727,9 +751,9 @@ template {
     font-weight: 500;
     line-height: 20.48px;
     color: #37373F;
+    position: relative;
     margin-bottom: 15px;
     margin-left: 45px;
-    position: relative;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
 }
@@ -746,13 +770,14 @@ template {
 }
 
 .photosession__item-ask {
+    width: 210px;
     font-size: 14px;
     font-weight: 500;
     line-height: 20.48px;
     color: #37373F;
-    margin-bottom: 90px;
-    margin-left: 45px;
     position: relative;
+    margin-bottom: 80px;
+    margin-left: 45px;
     -webkit-transform: translateY(45px);
     transform: translateY(45px);
 }
@@ -768,24 +793,23 @@ template {
     margin-left: 12px;
 }
 
+@media screen and (min-width: 576px) {
+    .photosession__item-ask {
+        width: 100%;
+    }
+}
+
 .photosession__item-comment {
     font-size: 14px;
     font-weight: 400;
     line-height: 20.48px;
     color: #37373F;
+    position: relative;
     margin-top: 20px;
     margin-bottom: 25px;
     margin-left: 45px;
-    position: relative;
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
-}
-
-.photosession__item-comment__span {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20.48px;
-    color: #37373F;
 }
 
 .photosession__item-comment::before {
@@ -795,7 +819,7 @@ template {
     height: 41px;
     position: absolute;
     left: -57px;
-    top: -2px;
+    top: 0;
     margin-left: 12px;
 }
 
@@ -808,6 +832,48 @@ template {
     left: -10px;
     top: 21px;
     margin-left: 12px;
+}
+
+@media screen and (min-width: 576px) {
+    .photosession__item-comment {
+        font-size: 18px;
+        line-height: 26.33px;
+    }
+}
+
+.photosession__link-min {
+    text-decoration: none;
+}
+
+.photosession__link-max {
+    text-decoration: none;
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .photosession__item-comment {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+
+    .photosession__item-comment::before {
+        top: -10px;
+    }
+
+    .photosession__item-comment::after {
+        left: 215px;
+        top: 5px;
+    }
+
+    .photosession__link-max {
+        display: initial;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+
+    .photosession__link-min {
+        display: none;
+    }
 }
 
 hr {
