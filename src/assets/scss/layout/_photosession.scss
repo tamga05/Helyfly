@@ -20,6 +20,15 @@
         text-align: center;
         width: 160px;
         margin-bottom: 15px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 48.76px;
+            width: 200px;
+            margin-bottom: 40px;
+        }
+
     }
 
     &__image {
@@ -42,9 +51,16 @@
     &__image-pic {
         width: 12px;
         height: 17px;
+        object-fit: cover;
         position: absolute;
         right: 20px;
         bottom: 20px;
+
+        @media screen and (min-width: 576px) {
+            width: 16px;
+            height: 23px;
+        }
+
     }
 
 

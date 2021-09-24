@@ -632,6 +632,16 @@ template {
     margin-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+    .photosession__image-title {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48.76px;
+        width: 200px;
+        margin-bottom: 40px;
+    }
+}
+
 .photosession__image {
     max-width: 100%;
     width: 100%;
@@ -652,9 +662,18 @@ template {
 .photosession__image-pic {
     width: 12px;
     height: 17px;
+    -o-object-fit: cover;
+    object-fit: cover;
     position: absolute;
     right: 20px;
     bottom: 20px;
+}
+
+@media screen and (min-width: 576px) {
+    .photosession__image-pic {
+        width: 16px;
+        height: 23px;
+    }
 }
 
 .photosession__text-block {
