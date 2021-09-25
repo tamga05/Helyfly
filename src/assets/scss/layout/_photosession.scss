@@ -4,12 +4,21 @@
         @extend %container;
     }
 
+    &__wrapper {
+
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+    }
+
     &__image-block {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 40px;
-        position: relative;
     }
 
     &__image-title {
@@ -29,32 +38,56 @@
             margin-bottom: 40px;
         }
 
+        @media screen and (min-width: 1280px) {
+            display: none;
+        }
+
+    }
+
+    &__image-block-wrapper {
+        max-width: 100%;
+        width: 100%;
+        position: relative;
     }
 
     &__image {
-        max-width: 100%;
         width: 100%;
-        border: 1px solid #000000;
         border-radius: 4px;
         object-fit: cover;
-    }
 
+        @media screen and (min-width: 1280px) {
+            width: 555px;
+        }
+
+    }
 
     &__image-link {
         text-decoration: none;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
 
-        &__link {
-            display: none;
+        @media screen and (min-width: 576px) {
+            right: 30px;
+            bottom: 30px;
         }
+
+        @media screen and (min-width: 768px) {
+            right: 40px;
+            bottom: 30px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            right: 45px;
+            bottom: 30px;
+        }
+
     }
 
     &__image-pic {
         width: 12px;
         height: 17px;
         object-fit: cover;
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
 
         @media screen and (min-width: 576px) {
             width: 16px;
@@ -63,7 +96,6 @@
 
     }
 
-
     &__text-block {
         display: flex;
         flex-direction: column;
@@ -71,14 +103,23 @@
     }
 
     &__text-title {
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 34.13px;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48.76px;
         color: $textColor;
         text-align: center;
         align-self: center;
+        margin-bottom: 20px;
         width: 160px;
         display: none;
+
+        @media screen and (min-width: 1280px) {
+            display: initial;
+            width: 200px;
+            text-align: left;
+            align-self: flex-start;
+        }
+
     }
 
     &__text {
@@ -99,7 +140,6 @@
 
     &__list {
         list-style-type: none;
-        //width: 255px;
     }
 
     &__link {

@@ -611,6 +611,17 @@ template {
     transform: translateY(-6px);
 }
 
+@media screen and (min-width: 1280px) {
+    .photosession__wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+
 .photosession__image-block {
     display: -ms-flexbox;
     display: flex;
@@ -619,7 +630,6 @@ template {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 40px;
-    position: relative;
 }
 
 .photosession__image-title {
@@ -642,21 +652,57 @@ template {
     }
 }
 
-.photosession__image {
+@media screen and (min-width: 1280px) {
+    .photosession__image-title {
+        display: none;
+    }
+}
+
+.photosession__image-block-wrapper {
     max-width: 100%;
     width: 100%;
-    border: 1px solid #000000;
+    position: relative;
+}
+
+.photosession__image {
+    width: 100%;
     border-radius: 4px;
     -o-object-fit: cover;
     object-fit: cover;
 }
 
-.photosession__image-link {
-    text-decoration: none;
+@media screen and (min-width: 1280px) {
+    .photosession__image {
+        width: 555px;
+    }
 }
 
-.photosession__image-link__link {
-    display: none;
+.photosession__image-link {
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+@media screen and (min-width: 576px) {
+    .photosession__image-link {
+        right: 30px;
+        bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .photosession__image-link {
+        right: 40px;
+        bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .photosession__image-link {
+        right: 45px;
+        bottom: 30px;
+    }
 }
 
 .photosession__image-pic {
@@ -664,9 +710,6 @@ template {
     height: 17px;
     -o-object-fit: cover;
     object-fit: cover;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
 }
 
 @media screen and (min-width: 576px) {
@@ -685,15 +728,26 @@ template {
 }
 
 .photosession__text-title {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 34.13px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48.76px;
     color: #37373F;
     text-align: center;
     -ms-flex-item-align: center;
     align-self: center;
+    margin-bottom: 20px;
     width: 160px;
     display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .photosession__text-title {
+        display: initial;
+        width: 200px;
+        text-align: left;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
 }
 
 .photosession__text {
