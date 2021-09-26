@@ -796,8 +796,56 @@ hr {
   .photo__pic2 {
     order: -3; } }
 
+.photo__select-wrapper {
+  display: none;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 27px;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .photo__select-wrapper {
+      display: block; } }
+  .photo__select-wrapper::before {
+    content: "";
+    background-image: url(./../images/photo/select-arrow.svg);
+    width: 11px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 12px; }
+  .photo__select-wrapper::after {
+    content: "";
+    background-image: url(./../images/photo/select-arrow.svg);
+    width: 11px;
+    height: 6px;
+    position: absolute;
+    right: 0;
+    bottom: 12px; }
+
+.photo__select {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  appearance: none;
+  overflow: hidden;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24.87px;
+  color: #5286EC;
+  border: transparent;
+  outline: transparent;
+  cursor: pointer; }
+
 .pic {
   width: 277px;
   height: 185px; }
+
+hr {
+  color: #C7C7C7;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    hr {
+      display: block; } }
 
 /*# sourceMappingURL=style.min.css.map */
