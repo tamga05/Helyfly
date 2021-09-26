@@ -765,6 +765,24 @@ hr {
       margin-top: 60px;
       margin-bottom: 30px;
       text-align: left; } }
+  @media screen and (min-width: 1280px) {
+    .photo__title {
+      width: 315px;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 40.96px;
+      color: #37373F;
+      margin-top: 70px;
+      margin-bottom: 50px; } }
+  @media screen and (min-width: 1440px) {
+    .photo__title {
+      width: 220px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 29.26px;
+      color: #37373F;
+      margin-top: 30px;
+      margin-bottom: 37px; } }
 
 .photo__image {
   display: flex;
@@ -781,6 +799,11 @@ hr {
       grid-gap: 11px;
       justify-content: center;
       align-content: center; } }
+  @media screen and (min-width: 1280px) {
+    .photo__image {
+      grid-template-rows: repeat(2, 185px);
+      grid-template-columns: repeat(4, 277px);
+      overflow-x: hidden; } }
 
 @media screen and (min-width: 768px) {
   .photo__pic7 {
@@ -806,6 +829,10 @@ hr {
   @media screen and (min-width: 768px) {
     .photo__select-wrapper {
       display: block; } }
+  @media screen and (min-width: 1280px) {
+    .photo__select-wrapper {
+      margin-top: 41px;
+      margin-bottom: 30px; } }
   .photo__select-wrapper::before {
     content: "";
     background-image: url(./../images/photo/select-arrow.svg);
