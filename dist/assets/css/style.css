@@ -1183,9 +1183,18 @@ hr {
     height: 185px;
 }
 
+@media screen and (min-width: 1280px) {
+    .photographer__wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+}
+
 .photographer__about {
     width: 155px;
-    padding-top: 63px;
+    padding-top: 68px;
     margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
@@ -1204,6 +1213,13 @@ hr {
     position: absolute;
     right: -65px;
     top: 50px;
+}
+
+@media screen and (min-width: 1280px) {
+    .photographer__about {
+        -webkit-transform: translateX(26px);
+        transform: translateX(26px);
+    }
 }
 
 .photographer__photo {
@@ -1226,6 +1242,12 @@ hr {
     margin-bottom: 7px;
 }
 
+@media screen and (min-width: 576px) {
+    .photographer__title {
+        margin-bottom: 11px;
+    }
+}
+
 .photographer__info {
     font-size: 14px;
     font-weight: 500;
@@ -1236,7 +1258,13 @@ hr {
 }
 
 .photographer__main {
-    padding-top: 20px;
+    padding-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .photographer__main {
+        padding-top: 30px;
+    }
 }
 
 .photographer__subtitle-organizer {
@@ -1246,13 +1274,32 @@ hr {
     color: #37373F;
 }
 
+@media screen and (min-width: 576px) {
+    .photographer__subtitle-organizer {
+        margin-bottom: 14px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .photographer__subtitle-organizer {
+        margin-top: 37px;
+        margin-bottom: 14px;
+    }
+}
+
 .photographer__text {
-    width: 235px;
+    width: 100%;
     font-size: 16px;
     font-weight: 400;
     line-height: 24.18px;
     color: #37373F;
     text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .photographer__text {
+        width: 584px;
+    }
 }
 
 .photographer__subtitle-provider {
@@ -1280,6 +1327,19 @@ hr {
     top: 10px;
 }
 
+@media screen and (min-width: 576px) {
+    .photographer__select-first {
+        margin-top: 22px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .photographer__select-first {
+        margin-top: 5px;
+    }
+}
+
 .photographer__select-second {
     width: 100px;
     margin-top: 22px;
@@ -1295,6 +1355,19 @@ hr {
     position: absolute;
     right: 0;
     top: 10px;
+}
+
+@media screen and (min-width: 576px) {
+    .photographer__select-second {
+        margin-bottom: 52px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .photographer__select-second {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
 }
 
 .photographer__select {
@@ -1315,7 +1388,12 @@ hr {
 }
 
 .photographer__hr {
-    margin-top: 50px;
     color: #C7C7C7;
     display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .photographer__hr {
+        display: block;
+    }
 }
