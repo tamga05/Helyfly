@@ -833,6 +833,10 @@ hr {
     .photo__select-wrapper {
       margin-top: 41px;
       margin-bottom: 30px; } }
+  @media screen and (min-width: 1440px) {
+    .photo__select-wrapper {
+      margin-top: 44px;
+      margin-bottom: 27px; } }
   .photo__select-wrapper::before {
     content: "";
     background-image: url(./../images/photo/select-arrow.svg);

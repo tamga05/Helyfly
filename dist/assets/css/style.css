@@ -1019,6 +1019,18 @@ hr {
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .photo__title {
+        width: 220px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 29.26px;
+        color: #37373F;
+        margin-top: 30px;
+        margin-bottom: 37px;
+    }
+}
+
 .photo__image {
     display: -ms-flexbox;
     display: flex;
@@ -1053,6 +1065,7 @@ hr {
     .photo__image {
         grid-template-rows: repeat(2, 185px);
         grid-template-columns: repeat(4, 277px);
+        overflow-x: hidden;
     }
 }
 
