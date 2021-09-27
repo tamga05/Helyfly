@@ -332,16 +332,16 @@ template {
 [hidden] {
   display: none; }
 
-.header .container, .main-block .container, .photosession .container, .photo .container {
+.header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
   padding: 0 15px; }
   @media screen and (min-width: 576px) {
-    .header .container, .main-block .container, .photosession .container, .photo .container {
+    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
       padding: 0 35px; } }
   @media screen and (min-width: 768px) {
-    .header .container, .main-block .container, .photosession .container, .photo .container {
+    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
       padding: 0 50px; } }
   @media screen and (min-width: 1280px) {
-    .header .container, .main-block .container, .photosession .container, .photo .container {
+    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
       padding: 0;
       width: 1140px;
       margin: 0 auto; } }
@@ -868,15 +868,51 @@ hr {
   outline: transparent;
   cursor: pointer; }
 
+.photo__hr {
+  color: #C7C7C7;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .photo__hr {
+      display: block; } }
+
 .pic {
   width: 277px;
   height: 185px; }
 
-hr {
-  color: #C7C7C7;
-  display: none; }
-  @media screen and (min-width: 768px) {
-    hr {
-      display: block; } }
+.photographer__about {
+  width: 155px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.photographer__photo {
+  margin-top: 63px;
+  margin-bottom: 23px; }
+
+.photographer__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.94px;
+  color: #37373F;
+  margin-bottom: 7px; }
+
+.photographer__title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.16px;
+  color: #37373F;
+  margin-bottom: 7px; }
+
+.photographer__info {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21.16px;
+  color: #5286EC;
+  text-align: center;
+  text-decoration: none; }
+
+.photographer__text {
+  padding-top: 25px; }
 
 /*# sourceMappingURL=style.min.css.map */

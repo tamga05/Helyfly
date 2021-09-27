@@ -371,24 +371,24 @@ template {
     display: none;
 }
 
-.header .container, .main-block .container, .photosession .container, .photo .container {
+.header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
     padding: 0 15px;
 }
 
 @media screen and (min-width: 576px) {
-    .header .container, .main-block .container, .photosession .container, .photo .container {
+    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
         padding: 0 35px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header .container, .main-block .container, .photosession .container, .photo .container {
+    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
         padding: 0 50px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .header .container, .main-block .container, .photosession .container, .photo .container {
+    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
         padding: 0;
         width: 1140px;
         margin: 0 auto;
@@ -1123,6 +1123,13 @@ hr {
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .photo__select-wrapper {
+        margin-top: 44px;
+        margin-bottom: 27px;
+    }
+}
+
 .photo__select-wrapper::before {
     content: "";
     background-image: url(./../images/photo/select-arrow.svg);
@@ -1160,18 +1167,63 @@ hr {
     cursor: pointer;
 }
 
-.pic {
-    width: 277px;
-    height: 185px;
-}
-
-hr {
+.photo__hr {
     color: #C7C7C7;
     display: none;
 }
 
 @media screen and (min-width: 768px) {
-    hr {
+    .photo__hr {
         display: block;
     }
+}
+
+.pic {
+    width: 277px;
+    height: 185px;
+}
+
+.photographer__about {
+    width: 155px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.photographer__photo {
+    margin-top: 63px;
+    margin-bottom: 23px;
+}
+
+.photographer__subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    color: #37373F;
+    margin-bottom: 7px;
+}
+
+.photographer__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.16px;
+    color: #37373F;
+    margin-bottom: 7px;
+}
+
+.photographer__info {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21.16px;
+    color: #5286EC;
+    text-align: center;
+    text-decoration: none;
+}
+
+.photographer__text {
+    padding-top: 25px;
 }
