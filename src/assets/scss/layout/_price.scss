@@ -1,0 +1,25 @@
+.price {
+
+    .container {
+        @extend %container;
+    }
+
+    &__title {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 31.69px;
+        color: $textColor;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__link-min {
+        text-decoration: none;
+        display: none;
+    }
+
+    &__link-max {
+        text-decoration: none;
+    }
+
+}

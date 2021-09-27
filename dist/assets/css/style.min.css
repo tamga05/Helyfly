@@ -332,16 +332,16 @@ template {
 [hidden] {
   display: none; }
 
-.header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
+.header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container, .price .container {
   padding: 0 15px; }
   @media screen and (min-width: 576px) {
-    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
+    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container, .price .container {
       padding: 0 35px; } }
   @media screen and (min-width: 768px) {
-    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
+    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container, .price .container {
       padding: 0 50px; } }
   @media screen and (min-width: 1280px) {
-    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container {
+    .header .container, .main-block .container, .photosession .container, .photo .container, .photographer .container, .price .container {
       padding: 0;
       width: 1140px;
       margin: 0 auto; } }
@@ -702,10 +702,10 @@ template {
       font-size: 18px;
       line-height: 26.33px; } }
 
-.photosession__link-min {
+.photosession__link-max {
   text-decoration: none; }
 
-.photosession__link-max {
+.photosession__link-min {
   text-decoration: none;
   display: none; }
 
@@ -717,10 +717,10 @@ template {
     .photosession__item-comment::after {
       left: 215px;
       top: 5px; }
-  .photosession__link-max {
+  .photosession__link-min {
     display: initial;
     transform: translateY(10px); }
-  .photosession__link-min {
+  .photosession__link-max {
     display: none; } }
 
 hr {
@@ -1035,5 +1035,20 @@ hr {
   @media screen and (min-width: 1280px) {
     .photographer__hr {
       display: none; } }
+
+.price__title {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31.69px;
+  color: #37373F;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.price__link-min {
+  text-decoration: none;
+  display: none; }
+
+.price__link-max {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.min.css.map */

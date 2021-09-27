@@ -285,11 +285,11 @@
 
     }
 
-    &__link-min {
+    &__link-max {
         text-decoration: none;
     }
 
-    &__link-max {
+    &__link-min {
         text-decoration: none;
         display: none;
     }
@@ -310,12 +310,12 @@
 
         }
 
-        &__link-max {
+        &__link-min {
             display: initial;
             transform: translateY(10px);
         }
 
-        &__link-min {
+        &__link-max {
             display: none;
         }
 
