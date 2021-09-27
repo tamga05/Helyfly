@@ -6,24 +6,45 @@
 
     &__about {
         width: 155px;
+        padding-top: 63px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+
+        &::after {
+            content: "";
+            background-image: url(./../images/photographer/heart.svg);
+            width: 31px;
+            height: 27px;
+            position: absolute;
+            right: -65px;
+            top: 50px;
+        }
+
     }
 
     &__photo {
-        margin-top: 63px;
+        //margin-top: 63px;
         margin-bottom: 23px;
     }
 
-    &__subtitle {
+    &__name {
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 21.94px;
         color: $textColor;
         margin-bottom: 7px;
     }
+
+    // &__subtitle-organizer {
+    //     font-size: 18px;
+    //     font-weight: 500;
+    //     line-height: 21.94px;
+    //     color: $textColor;
+    //     margin-bottom: 7px;
+    // }
 
     &__title {
         font-size: 14px;
@@ -42,8 +63,89 @@
         text-decoration: none;
     }
 
+    &__main {
+        padding-top: 20px;
+    }
+
+    &__subtitle-organizer {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26.33px;
+        color: $textColor;
+    }
+
     &__text {
-        padding-top: 25px;
+        width: 235px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24.18px;
+        color: $textColor;
+        text-align: left;
+    }
+
+    &__subtitle-provider {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26.33px;
+        color: $textColor;
+        margin-bottom: 14px;
+    }
+
+    &__select-first {
+        width: 100px;
+        margin-top: 43px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &::after {
+            content: "";
+            background-image: url(./../images/photo/select-arrow.svg);
+            width: 11px;
+            height: 6px;
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+
+    }
+
+    &__select-second {
+        width: 100px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+        position: relative;
+
+        &::after {
+            content: "";
+            background-image: url(./../images/photo/select-arrow.svg);
+            width: 11px;
+            height: 6px;
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+
+    }
+
+    &__select {
+        width: 100%;
+        height: 19px;
+        text-align: left;
+        appearance: none;
+        overflow: hidden;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 23.4px;
+        color: #5286EC;
+        border: transparent;
+        outline: transparent;
+        cursor: pointer;
+    }
+
+    &__hr {
+        margin-top: 50px;
+        color: $secondaryColor;
+        display: none;
     }
 
 }
