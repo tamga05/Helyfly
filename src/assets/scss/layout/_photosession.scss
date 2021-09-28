@@ -260,11 +260,19 @@
             content: "";
             background-image: url(./../images/photosession/cup.svg);
             width: 37px;
-            height: 41px;
+            height: 42px;
             position: absolute;
             left: -57px;
             top: 0;
             margin-left: 12px;
+
+            @media screen and (min-width: 576px) {
+                background-image: url(./../images/price/cup-min.svg);
+                width: 32px;
+                height: 36px;
+            }
+
+
         }
 
         &::after {

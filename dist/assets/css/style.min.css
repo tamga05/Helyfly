@@ -683,11 +683,16 @@ template {
     content: "";
     background-image: url(./../images/photosession/cup.svg);
     width: 37px;
-    height: 41px;
+    height: 42px;
     position: absolute;
     left: -57px;
     top: 0;
     margin-left: 12px; }
+    @media screen and (min-width: 576px) {
+      .photosession__item-comment::before {
+        background-image: url(./../images/price/cup-min.svg);
+        width: 32px;
+        height: 36px; } }
   .photosession__item-comment::after {
     content: "";
     background-image: url(./../images/photosession/starblock.svg);
@@ -1037,12 +1042,17 @@ hr {
       display: none; } }
 
 .price__title {
+  width: 280px;
   font-size: 26px;
   font-weight: 400;
   line-height: 31.69px;
   color: #37373F;
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 40px; }
+  @media screen and (min-width: 576px) {
+    .price__title {
+      padding-top: 21px; } }
 
 .price__date {
   height: 60px;
@@ -1050,6 +1060,10 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (min-width: 576px) {
+    .price__date {
+      justify-content: flex-start;
+      padding-left: 20px; } }
 
 .price__date-link {
   font-size: 18px;
@@ -1057,12 +1071,24 @@ hr {
   line-height: 26.33px;
   color: #37373F;
   text-decoration: none; }
+  @media screen and (min-width: 576px) {
+    .price__date-link {
+      margin-right: 15px;
+      pointer-events: none;
+      cursor: default; } }
 
 .price__calendar-link {
   display: none; }
   @media screen and (min-width: 576px) {
     .price__calendar-link {
-      display: inline-block; } }
+      display: block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid #C4C4C4;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
 
 .price__btn {
   cursor: pointer; }
@@ -1080,12 +1106,26 @@ hr {
   color: #37373F;
   margin-bottom: 10px; }
 
-.price__cost {
+.price__cost-min {
   font-size: 18px;
   font-weight: 600;
   line-height: 21.94px;
   color: #37373F;
   margin-bottom: 10px; }
+  @media screen and (min-width: 576px) {
+    .price__cost-min {
+      display: none; } }
+
+.price__cost-max {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+  color: #37373F;
+  margin-bottom: 10px;
+  display: none; }
+  @media screen and (min-width: 576px) {
+    .price__cost-max {
+      display: block; } }
 
 .price__place {
   font-size: 18px;
@@ -1116,14 +1156,25 @@ hr {
   line-height: 19.02px;
   color: #37373F;
   position: relative; }
+  @media screen and (min-width: 576px) {
+    .price__comment {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26.33px;
+      color: #37373F; } }
   .price__comment::before {
     content: "";
     background-image: url(./../images/photosession/cup.svg);
-    width: 37px;
-    height: 41px;
+    width: 35px;
+    height: 42px;
     position: absolute;
     left: 20px;
     top: 32px; }
+    @media screen and (min-width: 576px) {
+      .price__comment::before {
+        background-image: url(./../images/price/cup-min.svg);
+        width: 32px;
+        height: 36px; } }
   .price__comment::after {
     content: "";
     background-image: url(./../images/photosession/starblock.svg);
@@ -1138,7 +1189,8 @@ hr {
   display: none; }
   @media screen and (min-width: 576px) {
     .price__link-min {
-      display: block; } }
+      display: block;
+      margin-left: 60px; } }
 
 .price__link-max {
   text-decoration: none;
