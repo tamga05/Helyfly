@@ -916,11 +916,11 @@ template {
     }
 }
 
-.photosession__link-min {
+.photosession__link-max {
     text-decoration: none;
 }
 
-.photosession__link-max {
+.photosession__link-min {
     text-decoration: none;
     display: none;
 }
@@ -940,13 +940,13 @@ template {
         top: 5px;
     }
 
-    .photosession__link-max {
+    .photosession__link-min {
         display: initial;
         -webkit-transform: translateY(10px);
         transform: translateY(10px);
     }
 
-    .photosession__link-min {
+    .photosession__link-max {
         display: none;
     }
 }
@@ -1401,6 +1401,115 @@ hr {
 
 @media screen and (min-width: 1280px) {
     .photographer__hr {
+        display: none;
+    }
+}
+
+.price__title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.69px;
+    color: #37373F;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.price__date {
+    padding: 18px 0;
+    border: 1px solid #C7C7C7;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.price__date-link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.33px;
+    color: #37373F;
+    text-align: center;
+    text-decoration: none;
+}
+
+.price__calendar-link {
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .price__calendar-link {
+        display: inline-block;
+    }
+}
+
+.price__btn {
+    cursor: pointer;
+}
+
+.price__buy {
+    padding: 30px 0;
+    border: 1px solid #C7C7C7;
+    border-top: none;
+    padding-left: 20px;
+}
+
+.price__time {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.33px;
+    color: #37373F;
+    margin-bottom: 10px;
+}
+
+.price__cost {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    color: #37373F;
+    margin-bottom: 10px;
+}
+
+.price__place {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.33px;
+    color: #37373F;
+    margin-bottom: 20px;
+}
+
+.price__btn {
+    width: 130px;
+    height: 50px;
+    border: 2px solid #FC9B09;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    color: #FC9B09;
+}
+
+.price__comment {
+    border: 1px solid #C7C7C7;
+    border-top: none;
+    padding-left: 20px;
+}
+
+.price__link-min {
+    text-decoration: none;
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .price__link-min {
+        display: block;
+    }
+}
+
+.price__link-max {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 576px) {
+    .price__link-max {
         display: none;
     }
 }
