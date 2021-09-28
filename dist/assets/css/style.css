@@ -891,11 +891,19 @@ template {
     content: "";
     background-image: url(./../images/photosession/cup.svg);
     width: 37px;
-    height: 41px;
+    height: 42px;
     position: absolute;
     left: -57px;
     top: 0;
     margin-left: 12px;
+}
+
+@media screen and (min-width: 576px) {
+    .photosession__item-comment::before {
+        background-image: url(./../images/price/cup-min.svg);
+        width: 32px;
+        height: 36px;
+    }
 }
 
 .photosession__item-comment::after {
@@ -1425,6 +1433,7 @@ hr {
 .price__date {
     height: 60px;
     border: 1px solid #C7C7C7;
+    border-bottom: none;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -1484,7 +1493,7 @@ hr {
 .price__buy {
     padding: 30px 0;
     border: 1px solid #C7C7C7;
-    border-top: none;
+    border-bottom: none;
     padding-left: 20px;
 }
 
@@ -1496,12 +1505,33 @@ hr {
     margin-bottom: 10px;
 }
 
-.price__cost {
+.price__cost-min {
     font-size: 18px;
     font-weight: 600;
     line-height: 21.94px;
     color: #37373F;
     margin-bottom: 10px;
+}
+
+@media screen and (min-width: 576px) {
+    .price__cost-min {
+        display: none;
+    }
+}
+
+.price__cost-max {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    color: #37373F;
+    margin-bottom: 10px;
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .price__cost-max {
+        display: block;
+    }
 }
 
 .price__place {
@@ -1526,7 +1556,6 @@ hr {
 
 .price__comment {
     border: 1px solid #C7C7C7;
-    border-top: none;
     padding-left: 20px;
     padding-top: 32px;
     padding-bottom: 48px;
@@ -1537,14 +1566,33 @@ hr {
     position: relative;
 }
 
+@media screen and (min-width: 576px) {
+    .price__comment {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26.33px;
+        color: #37373F;
+        border-top: none;
+    }
+}
+
 .price__comment::before {
     content: "";
     background-image: url(./../images/photosession/cup.svg);
-    width: 37px;
-    height: 41px;
+    width: 35px;
+    height: 42px;
     position: absolute;
     left: 20px;
     top: 32px;
+}
+
+@media screen and (min-width: 576px) {
+    .price__comment::before {
+        background-image: url(./../images/price/cup-min.svg);
+        width: 32px;
+        height: 36px;
+        top: 22px;
+    }
 }
 
 .price__comment::after {
@@ -1557,6 +1605,13 @@ hr {
     bottom: 27px;
 }
 
+@media screen and (min-width: 576px) {
+    .price__comment::after {
+        bottom: 52px;
+        right: 50px;
+    }
+}
+
 .price__link-min {
     text-decoration: none;
     display: none;
@@ -1565,6 +1620,7 @@ hr {
 @media screen and (min-width: 576px) {
     .price__link-min {
         display: block;
+        margin-left: 50px;
     }
 }
 
