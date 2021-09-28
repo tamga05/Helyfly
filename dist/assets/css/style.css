@@ -1415,10 +1415,14 @@ hr {
 }
 
 .price__date {
-    padding: 18px 0;
+    height: 60px;
     border: 1px solid #C7C7C7;
-    width: 100%;
-    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .price__date-link {
@@ -1426,7 +1430,6 @@ hr {
     font-weight: 400;
     line-height: 26.33px;
     color: #37373F;
-    text-align: center;
     text-decoration: none;
 }
 
@@ -1491,6 +1494,23 @@ hr {
     border: 1px solid #C7C7C7;
     border-top: none;
     padding-left: 20px;
+    padding-top: 32px;
+    padding-bottom: 48px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.02px;
+    color: #37373F;
+    position: relative;
+}
+
+.price__comment::before {
+    content: "";
+    background-image: url(./../images/photosession/cup.svg);
+    width: 37px;
+    height: 41px;
+    position: absolute;
+    left: 20px;
+    top: 32px;
 }
 
 .price__link-min {
@@ -1506,6 +1526,7 @@ hr {
 
 .price__link-max {
     text-decoration: none;
+    margin-left: 70px;
 }
 
 @media screen and (min-width: 576px) {
