@@ -5,7 +5,7 @@
     }
 
     &__title {
-        width: 280px;
+        width: 220px;
         font-size: 26px;
         font-weight: 400;
         line-height: 31.69px;
@@ -18,12 +18,49 @@
             padding-top: 21px;
         }
 
+        @media screen and (min-width: 768px) {
+            padding-top: 60px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 29.26px;
+            margin: 0;
+            width: 168px;
+            text-align: left;
+            padding-bottom: 30px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 40.96px;
+            width: 235px;
+            padding-top: 50px;
+            padding-bottom: 40px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 29.26px;
+            padding-bottom: 30px;
+            width: 168px;
+        }
+
+    }
+
+    &__wrapper {
+
+        @media screen and (min-width: 1280px) {
+            width: 770px;
+        }
+
     }
 
     &__date {
-        height: 60px;
         border: 1px solid $secondaryColor;
         border-bottom: none;
+        padding-top: 20px;
+        padding-bottom: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,11 +68,28 @@
         @media screen and (min-width: 576px) {
             justify-content: flex-start;
             padding-left: 20px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            padding-top: 38px;
+            padding-bottom: 12px;
+            padding-left: 24px;
+            align-items: end;
+        }
+
+        @media screen and (min-width: 1280px) {
+            padding-top: 30px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            align-items: center;
         }
 
     }
 
     &__date-link {
+        width: 180px;
         font-size: 18px;
         font-weight: 400;
         line-height: 26.33px;
@@ -46,6 +100,10 @@
             margin-right: 15px;
             pointer-events: none;
             cursor: default;
+        }
+
+        @media screen and (min-width: 768px) {
+
         }
 
     }
@@ -70,15 +128,25 @@
         cursor: pointer;
     }
 
-    &__calendar-icon {
-
-    }
-
     &__buy {
-        padding: 30px 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
         border: 1px solid $secondaryColor;
         border-bottom: none;
-        padding-left: 20px;
+
+        @media screen and (min-width: 576px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
     }
 
     &__time {
@@ -122,6 +190,11 @@
         line-height: 26.33px;
         color: $textColor;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 576px) {
+            margin-bottom: 0;
+        }
+
     }
 
     &__btn {
@@ -172,6 +245,10 @@
                 top: 22px;
             }
 
+            @media screen and (min-width: 768px) {
+                left: 30px;
+            }
+
         }
 
         &::after {
@@ -188,6 +265,10 @@
                 left: 295px;
             }
 
+            @media screen and (min-width: 768px) {
+                left: 305px;
+            }
+
         }
 
     }
@@ -200,6 +281,10 @@
         @media screen and (min-width: 576px) {
             display: block;
             margin-left: 50px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-left: 60px;
         }
 
     }
