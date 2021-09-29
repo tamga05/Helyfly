@@ -6,7 +6,13 @@
     }
 
     &__map {
+        height: 423px;
         margin-bottom: 52px;
+
+        @media screen and (min-width: 576px) {
+            height: 510px;
+        }
+
     }
 
 }

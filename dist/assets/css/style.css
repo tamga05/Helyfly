@@ -1745,7 +1745,18 @@ hr {
     }
 }
 
-.map__container {
+.meet__wrapper {
     padding-top: 45px;
-    padding-bottom: 52px;
+    padding-bottom: 40px;
+}
+
+.meet__map {
+    height: 423px;
+    margin-bottom: 52px;
+}
+
+@media screen and (min-width: 576px) {
+    .meet__map {
+        height: 510px;
+    }
 }
