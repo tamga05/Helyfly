@@ -1744,3 +1744,8 @@ hr {
         display: none;
     }
 }
+
+.map__container {
+    padding-top: 45px;
+    padding-bottom: 52px;
+}

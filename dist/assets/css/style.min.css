@@ -1275,8 +1275,11 @@ hr {
     .price__link-max {
       display: none; } }
 
-.map__container {
+.meet__wrapper {
   padding-top: 45px;
-  padding-bottom: 52px; }
+  padding-bottom: 40px; }
+
+.meet__map {
+  margin-bottom: 52px; }
 
 /*# sourceMappingURL=style.min.css.map */
