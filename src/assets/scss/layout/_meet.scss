@@ -1,8 +1,12 @@
 .meet {
 
     &__wrapper {
-        padding-top: 45px;
         padding-bottom: 40px;
+
+        @media screen and (min-width: 576px) {
+            padding-top: 45px;
+        }
+
     }
 
     &__map {
