@@ -1,0 +1,16 @@
+.map {
+
+    &__wrapper {
+        height: 425px;
+        overflow-y: hidden;
+        margin-bottom: 110px;
+
+        @media screen and (min-width: 576px) {
+            height: 510px;
+            margin-top: 45px;
+            margin-bottom: 52px;
+    }
+
+}
+
+}

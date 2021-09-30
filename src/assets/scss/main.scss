@@ -5,11 +5,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+// :root {
+//     --swiper-navigation-size: 20px;
+//     --swiper-theme-color: red;
+//     --bg-light:blue;
+//     --accentColor:red;
+// }
 
 
 html,
 body {
     font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -38,5 +45,6 @@ body {
 @import "./layout/photo";
 @import "./layout/photographer";
 @import "./layout/price";
+@import "./layout/map";
 @import "./layout/meet";
 //@import "./layout/footer";

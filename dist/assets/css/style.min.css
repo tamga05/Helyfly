@@ -1275,17 +1275,98 @@ hr {
     .price__link-max {
       display: none; } }
 
-.meet__wrapper {
-  padding-bottom: 40px; }
+.map__wrapper {
+  height: 425px;
+  overflow-y: hidden;
+  margin-bottom: 110px; }
   @media screen and (min-width: 576px) {
-    .meet__wrapper {
-      padding-top: 45px; } }
+    .map__wrapper {
+      height: 510px;
+      margin-top: 45px;
+      margin-bottom: 52px; } }
 
-.meet__map {
-  height: 423px;
-  margin-bottom: 52px; }
-  @media screen and (min-width: 576px) {
-    .meet__map {
-      height: 510px; } }
+.meet__wrapper {
+  width: 274px;
+  margin: 0 auto;
+  border: 1px solid #C7C7C7; }
+
+.meet__photographer {
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between; }
+
+.meet__swiper-photo {
+  width: 65px;
+  height: 65px; }
+
+.meet__swiper-photographer-about {
+  width: 130px; }
+
+.meet____swiper-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  color: #37373F;
+  margin-bottom: 5px; }
+
+.meet__swiper-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.16px;
+  color: #37373F;
+  margin-bottom: 7px; }
+
+.meet__swiper-info {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21.16px;
+  color: #5286EC;
+  text-decoration: none; }
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.swiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .swiper__block {
+    width: 180px;
+    height: 225px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px; }
+  .swiper__row-one {
+    width: 66px;
+    height: 66px;
+    background-color: #FC9B09;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 43.88px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; }
+  .swiper__row-two {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.4px;
+    color: #37373F;
+    margin-bottom: 10px; }
+  .swiper__row-three {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.48px;
+    color: #37373F;
+    margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.min.css.map */

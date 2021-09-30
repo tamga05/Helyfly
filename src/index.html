@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./assets/css/style.min.css">
+
     <link rel="icon" href="./assets/images/favicon/helicopter.png" />
+
     <title>Helicopter</title>
 </head>
 
@@ -281,7 +288,7 @@
 
     </section> -->
 
-    <section class="price">
+    <!-- <section class="price">
 
         <div class="container">
 
@@ -349,80 +356,123 @@
 
         </div>
 
-    </section>
+    </section> -->
 
-    <section class="meet">
+    <!-- <section class="map">
 
-        <div class="meet__wrapper">
+        <div class="map__wrapper">
 
-            <div class="meet__map">
-
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2ecad876a5b58b558d664094b88d3ee187f54c38910f0bb2331c9f48cfae08bb&amp;width=100%25&amp;height=510&amp;lang=ru_RU&amp;scroll=true">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2ecad876a5b58b558d664094b88d3ee187f54c38910f0bb2331c9f48cfae08bb&amp;width=100%25&amp;height=510&amp;lang=ru_RU&amp;scroll=true">
                 </script>
 
-                <div class="meet__pointer">
+            <div class="map__pointer">
 
-                    <div class="">
+                <div class="">
 
-                        <p class=""></p>
+                    <p class=""></p>
 
-                        <p class=""></p>
+                    <p class=""></p>
 
-                    </div>
+                </div>
 
-                    <div class="">
+                <div class="">
 
-                        <p class=""></p>
+                    <p class=""></p>
 
-                        <p class=""></p>
+                    <p class=""></p>
 
-                    </div>
+                </div>
 
-                    <div class="">
+                <div class="">
 
-                        <p class=""></p>
+                    <p class=""></p>
 
-                        <p class=""></p>
+                    <p class=""></p>
 
-                    </div>
+                </div>
 
-                    <div class="">
+                <div class="map__pointer-photographer">
 
-                        <img class="photographer__photo" src="./assets/images/photographer/photo.svg" alt="#">
+                    <img class="map__pointer-photo" src="./assets/images/photographer/photo.svg" alt="#">
 
-                        <p class="photographer__name">Марина Иванова</p>
+                    <p class="map__pointer-name">Марина Иванова</p>
 
-                        <h2 class="photographer__title">Фотограф</h2>
+                    <h2 class="map__pointer-title">Фотограф</h2>
 
-                        <a class="photographer__info" href="#">Показать больше информации о фотографе</a>
-
-                    </div>
+                    <a class="map__pointer-info" href="#">Показать больше информации о фотографе</a>
 
                 </div>
 
             </div>
 
-            <div class="meet__slider-wrapper">
+        </div>
 
-                <div class="meet__slider">
+    </section> -->
 
-                    <div class="">your content</div>
+    <section class="meet">
 
-                    <div class="">your content</div>
+        <div class="meet__wrapper">
 
-                    <div class="">your content</div>
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-block">
+
+                        <p class="swiper__row-one">1</p>
+
+                        <p class="swiper__row-two">Где встречаемся?</p>
+
+                        <p class="swiper__row-three">Москва</p>
+
+                    </div>
+
+                    <div class="swiper-block">
+
+                        <p class="swiper__row-one">2</p>
+
+                        <p class="swiper__row-two">Время съёмки</p>
+
+                        <p class="swiper__row-three">3 часа</p>
+
+                    </div>
+
+                    <div class="swiper-block">
+
+                        <p class="swiper__row-one">3</p>
+
+                        <p class="swiper__row-two">Мест осталось:</p>
+
+                        <p class="swiper__row-three">2 места</p>
+
+                    </div>
 
                 </div>
 
-                <div class="meet__photographer" >
+                <div class="swiper-pagination"></div>
 
-                    <img class="photographer__photo" src="./assets/images/photographer/photo.svg" alt="#">
+                <div class="swiper-button-next"></div>
 
-                    <p class="photographer__name">Марина Иванова</p>
+                <div class="swiper-button-prev"></div>
 
-                    <h2 class="photographer__title">Фотограф</h2>
+            </div>
 
-                    <a class="photographer__info" href="#">Показать больше информации о фотографе</a>
+            <div class="meet__photographer">
+
+                <div class="meet__swiper-photographer-image">
+
+                    <img class="meet__swiper-photo" src="./assets/images/photographer/photo.svg" alt="#">
+
+                </div>
+
+                <div class="meet__swiper-photographer-about">
+
+                    <p class="meet__swiper-name">Марина Иванова</p>
+
+                    <h2 class="meet__swiper-title">Фотограф</h2>
+
+                    <a class="meet__swiper-info" href="#">Показать больше информации<br> о фотографе</a>
 
                 </div>
 
@@ -433,11 +483,9 @@
     </section>
 
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
     <script src="assets/js/script.js"></script>
-
-
-
-
 
 </body>
 

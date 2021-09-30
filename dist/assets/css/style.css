@@ -1746,17 +1746,129 @@ hr {
 }
 
 .meet__wrapper {
-    padding-top: 45px;
     padding-bottom: 40px;
+}
+
+@media screen and (min-width: 576px) {
+    .meet__wrapper {
+        padding-top: 45px;
+    }
+}
+
+.meet__slider {
+    width: 275px;
+    margin: 0 auto;
+    margin-top: 110px;
+    border: 1px solid #C7C7C7;
 }
 
 .meet__map {
     height: 423px;
-    margin-bottom: 52px;
+    margin-bottom: 110px;
 }
 
 @media screen and (min-width: 576px) {
     .meet__map {
         height: 510px;
     }
+}
+
+.meet__slider-photographer {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.meet__slider-photo {
+    width: 65px;
+    height: 65px;
+}
+
+.meet__slider-photographer-about {
+    width: 130px;
+}
+
+.meet____slider-name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #37373F;
+    margin-bottom: 5px;
+}
+
+.meet__slider-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.16px;
+    color: #37373F;
+    margin-bottom: 7px;
+}
+
+.meet__slider-info {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21.16px;
+    color: #5286EC;
+    text-decoration: none;
+}
+
+.slider {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.slider__block {
+    width: 180px;
+    height: 225px;
+    border: 1px solid red;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 52px;
+}
+
+.slider__row-one {
+    width: 66px;
+    height: 66px;
+    background-color: #FC9B09;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 43.88px;
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.slider__row-two {
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 23.4px;
+    color: #37373F;
+    margin-bottom: 10px;
+}
+
+.slider__row-three {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.48px;
+    color: #37373F;
+    margin-bottom: 20px;
 }

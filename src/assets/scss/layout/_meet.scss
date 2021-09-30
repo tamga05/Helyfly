@@ -1,22 +1,107 @@
 .meet {
 
     &__wrapper {
-        padding-bottom: 40px;
+        width: 274px;
+        margin: 0 auto;
+        border: 1px solid $secondaryColor;
+    }
 
-        @media screen and (min-width: 576px) {
-            padding-top: 45px;
-        }
+    &__photographer {
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__swiper-photo {
+        width: 65px;
+        height: 65px;
+    }
+
+    &__swiper-photographer-about {
+        width: 130px;
+    }
+
+    &____swiper-name {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        color: $textColor;
+        margin-bottom: 5px;
+    }
+
+    &__swiper-title {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21.16px;
+        color: $textColor;
+        margin-bottom: 7px;
+    }
+
+    &__swiper-info {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21.16px;
+        color:$linkColor;
+        text-decoration: none;
+        //margin-bottom: 20px;
+    }
+
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+    &__block {
+        width: 180px;
+        height: 225px;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 52px;
+    }
+
+    &__row-one {
+        width: 66px;
+        height: 66px;
+        background-color: $accentColor;
+        border-radius: 50px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 43.88px;
+        color: $primaryColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__row-two {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 23.4px;
+        color: $textColor;
+        margin-bottom: 10px;
 
     }
 
-    &__map {
-        height: 423px;
-        margin-bottom: 52px;
-
-        @media screen and (min-width: 576px) {
-            height: 510px;
-        }
-
+    &__row-three {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20.48px;
+        color: $textColor;
+        margin-bottom: 20px;
     }
 
 }
