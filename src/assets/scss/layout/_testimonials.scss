@@ -17,6 +17,20 @@
         margin-bottom: 50px;
     }
 
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__subblock {
+        display: flex;
+    }
+
+    &__subblock-image {
+        width: 84px;
+        height: 84px;
+    }
+
 
 
 

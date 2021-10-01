@@ -1514,6 +1514,17 @@ hr {
   text-align: center;
   margin-bottom: 50px; }
 
+.testimonials__block {
+  display: flex;
+  flex-direction: column; }
+
+.testimonials__subblock {
+  display: flex; }
+
+.testimonials__subblock-image {
+  width: 84px;
+  height: 84px; }
+
 .footer__wrapper {
   max-width: 1720px;
   width: 100%;
@@ -1522,10 +1533,6 @@ hr {
   align-items: center;
   flex-wrap: wrap;
   padding: 80px 0 95px; }
-
-.footer__top {
-  background-color: #f6a839;
-  margin-top: 5px; }
 
 @media screen and (min-width: 576px) {
   .footer__bottom {
