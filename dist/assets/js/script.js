@@ -1,5 +1,5 @@
 
-const swiper = new Swiper('.mySwiper', {
+const swiper = new Swiper('.meet__swiper', {
 
     // Pagination circles
     pagination: {
