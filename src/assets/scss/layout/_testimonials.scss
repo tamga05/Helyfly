@@ -1,0 +1,25 @@
+.testimonials {
+
+    .container {
+        @extend %container;
+    }
+
+    &__wrapper {
+        padding-top: 40px;
+    }
+
+    &__title {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 39.3px;
+        color: $textColor;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+
+}
