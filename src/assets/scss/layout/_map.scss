@@ -9,12 +9,129 @@
             height: 510px;
             margin-top: 45px;
             margin-bottom: 52px;
-    }
+        }
 
-}
+        @media screen and (min-width: 768px) {
+            margin-bottom: 73px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-top: 82px;
+            margin-bottom: 131px;
+            position: relative;
+        }
+
+        @media screen and (min-width: 1920px) {
+            margin-top: 72px;
+            margin-bottom: 141px;
+        }
+
+    }
 
     &__pointer {
         display: none;
+        width: 420px;
+        height: 470px;
+        background-color: #ffffff;
+        border: 1px solid $secondaryColor;
+        padding-left: 30px;
+        padding-top: 51px;
+        padding-bottom: 54px;
+
+        @media screen and (min-width: 1280px) {
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 70px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            top: 20px;
+            left: 150px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            left: 390px;
+        }
+
+    }
+
+    &__pointer-block {
+        display: flex;
+
+    }
+
+    &__pointer-span {
+        width: 61px;
+        height: 61px;
+        background-color: #FC9B09;
+        border-radius: 50px;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 51.2px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 18px;
+        margin-bottom: 35px;
+    }
+
+    &__pointer-subblock {
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-around;
+    }
+
+    &__pointer-row-first {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27.21px;
+        color: $textColor;
+        margin-bottom: 5px;
+    }
+
+    &__pointer-row-second {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26.33px;
+        color: $textColor;
+    }
+
+    &__pointer-photographer {
+        margin-top: 6px;
+        display: flex;
+    }
+
+    &__pointer-photo {
+        width: 67px;
+        height: 67px;
+    }
+
+    &__pointer-photographer-about {
+        margin-left: 10px;
+    }
+
+    &__pointer-name {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.94px;
+        color: $textColor;
+    }
+
+    &__pointer-title {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24.18px;
+        color: $textColor;
+    }
+
+    &__pointer-info {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21.16px;
+        color: $linkColor;
+        text-decoration: none;
     }
 
 }
