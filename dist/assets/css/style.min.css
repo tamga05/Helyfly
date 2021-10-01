@@ -1277,7 +1277,7 @@ hr {
 
 .map__wrapper {
   height: 425px;
-  overflow-y: hidden;
+  overflow: hidden;
   margin-bottom: 110px; }
   @media screen and (min-width: 576px) {
     .map__wrapper {
@@ -1326,15 +1326,14 @@ hr {
   color: #5286EC;
   text-decoration: none; }
 
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .swiper {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .swiper__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .swiper__block {
     width: 180px;
     height: 225px;

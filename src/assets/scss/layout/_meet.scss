@@ -51,16 +51,22 @@
 
 }
 
-.swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .swiper {
     display: flex;
     flex-direction:column;
     align-items: center;
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__wrapper {
+
+    }
 
     &__block {
         width: 180px;
