@@ -1,5 +1,7 @@
 .testimonials {
 
+    //overflow: hidden;
+
     .container {
         @extend %container;
     }
@@ -20,6 +22,10 @@
     &__block {
         display: flex;
         flex-direction: column;
+    }
+
+    &__block-hidden {
+        display: none;
     }
 
     &__subblock {

@@ -1518,6 +1518,9 @@ hr {
   display: flex;
   flex-direction: column; }
 
+.testimonials__block-hidden {
+  display: none; }
+
 .testimonials__subblock {
   display: flex; }
 
