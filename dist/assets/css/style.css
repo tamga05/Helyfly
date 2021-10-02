@@ -2083,10 +2083,29 @@ hr {
 .testimonials__subblock-image {
     width: 84px;
     height: 84px;
+    margin-right: 18px;
+}
+
+.testimonials__quote {
+    quotes: none;
 }
 
 .testimonials__cite {
     font-style: initial;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #37373F;
+    margin-top: 5px;
+    margin-bottom: 6px;
+}
+
+.testimonials__profession {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.16px;
+    color: #37373F;
+    margin-bottom: 7px;
 }
 
 .footer__wrapper {
