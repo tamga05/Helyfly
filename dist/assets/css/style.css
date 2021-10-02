@@ -2071,6 +2071,10 @@ hr {
     flex-direction: column;
 }
 
+.testimonials__block-hidden {
+    display: none;
+}
+
 .testimonials__subblock {
     display: -ms-flexbox;
     display: flex;
@@ -2079,6 +2083,10 @@ hr {
 .testimonials__subblock-image {
     width: 84px;
     height: 84px;
+}
+
+.testimonials__cite {
+    font-style: initial;
 }
 
 .footer__wrapper {

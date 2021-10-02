@@ -1528,6 +1528,12 @@ hr {
   width: 84px;
   height: 84px; }
 
+.testimonials__quote {
+  quotes: none; }
+
+.testimonials__cite {
+  font-style: initial; }
+
 .footer__wrapper {
   max-width: 1720px;
   width: 100%;
