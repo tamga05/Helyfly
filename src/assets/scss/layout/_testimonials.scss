@@ -1,7 +1,5 @@
 .testimonials {
 
-    //overflow: hidden;
-
     .container {
         @extend %container;
     }
@@ -17,18 +15,38 @@
         color: $textColor;
         text-align: center;
         margin-bottom: 50px;
+
+        @media screen and (min-width: 768px) {
+            text-align: left;
+            margin-top: 19px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 29.26px;
+        }
+
     }
 
     &__block {
         display: flex;
         flex-direction: column;
+
+        @media screen and (min-width: 768px) {
+            width: 655px;
+        }
+
     }
 
-    &__block-hidden {
+    &__block-three {
         display: none;
 
         @media screen and (min-width: 576px) {
             display: block;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 655px;
         }
 
     }
@@ -36,23 +54,85 @@
     &__subblock {
         display: flex;
         margin-bottom: 24px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 16px;
+        }
+
     }
 
-    &__subblock-text-hidden {
+    &__subblock-text {
+
+        @media screen and (min-width: 768px) {
+            margin-top: 10px;
+        }
+
+    }
+
+    &__subblock-three {
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    &__subblock-text-three {
         width: 120px;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 10px;
+        }
+
     }
 
     &__subblock-image {
         width: 84px;
         height: 84px;
         margin-right: 18px;
+
+        @media screen and (min-width: 768px) {
+            width: 101px;
+            height: 101px;
+            margin-right: 20px;
+        }
     }
 
-    &__quote {
-        quotes: none;
+    &__subblock-image-three {
+        width: 84px;
+        height: 84px;
+        margin-right: 37px;
+
+        @media screen and (min-width: 768px) {
+            width: 101px;
+            height: 101px;
+            margin-right: 19px;
+        }
+
     }
+
+    // &__quote {
+    //     quotes: none;
+    // }
 
     &__cite {
+        //font-style: initial;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        color: $textColor;
+        margin-top: 5px;
+        margin-bottom: 6px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21.94px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    &__cite-three {
         font-style: initial;
         //font-style: normal;
         font-size: 16px;
@@ -60,11 +140,16 @@
         line-height: 19.5px;
         color: $textColor;
         margin-top: 5px;
-        margin-bottom: 6px;
-    }
+        //margin-bottom: 20px;
 
-    &__cite-hidden {
-        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21.94px;
+            margin-top: 10px;
+            //margin-bottom: 10px;
+        }
+
     }
 
     &__profession {
@@ -73,11 +158,16 @@
         line-height: 21.16px;
         color: $textColor;
         margin-bottom: 7px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 10px;
+        }
+
     }
 
-    // &__rating-hidden {
-    //     display: block;
-    // }
+    &__rating-three {
+        margin-top: 20px;
+    }
 
     &__more {
         font-size: 14px;
@@ -87,6 +177,37 @@
         margin-left: 21px;
         margin-bottom: 14px;
         position: relative;
+
+        @media screen and (min-width: 768px) {
+            transform: translate(280px, -56px);
+            width: 280px;
+        }
+
+        &::before {
+            content: "";
+            background-image: url(./../images/testimonials/mark.svg);
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            left: -20px;
+            top: 3px;
+        }
+
+    }
+
+    &__more-three {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21.16px;
+        color: $textColorLight;
+        margin-left: 21px;
+        margin-bottom: 14px;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            transform: translate(280px, -76px);
+            width: 280px;
+        }
 
         &::before {
             content: "";
@@ -107,7 +228,17 @@
         color: $textColor;
         text-align: left;
         width: 100%;
-        margin-bottom: 17px;
+        quotes: none;
+
+        @media screen and (min-width: 768px) {
+            width: 415px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24.18px;
+            margin-top: -35px;
+            margin-left: 120px;
+        }
+
     }
 
     &__date-one {
@@ -115,7 +246,19 @@
         font-weight: 400;
         line-height: 21.16px;
         color: $textColorLight;
+        margin-top: 17px;
         margin-bottom: 44px;
+
+        @media screen and (min-width: 576px) {
+            margin-top: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-left: 120px;
+            margin-top: 22px;
+            margin-bottom: 35px;
+        }
+
     }
 
     &__quote-two {
@@ -125,7 +268,17 @@
         color: $textColor;
         text-align: left;
         width: 100%;
-        margin-bottom: 20px;
+        quotes: none;
+
+        @media screen and (min-width: 768px) {
+            width: 430px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24.18px;
+            margin-top: -35px;
+            margin-left: 120px;
+        }
+
     }
 
     &__date-two {
@@ -133,17 +286,75 @@
         font-weight: 400;
         line-height: 21.16px;
         color: $textColorLight;
+        margin-top: 20px;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 120px;
+            margin-top: 14px;
+            margin-bottom: 24px;
+        }
+
+    }
+
+    &__quote-three {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21.16px;
+        color: $textColor;
+        text-align: left;
+        width: 100%;
+        quotes: none;
+
+        @media screen and (min-width: 768px) {
+            width: 415px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24.18px;
+            margin-top: -65px;
+            margin-left: 120px;
+        }
+
+    }
+
+    &__date-three {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21.16px;
+        color: $textColorLight;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 120px;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+
     }
 
     &__line-one {
         color: $secondaryColor;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 120px;
+        }
+
     }
 
     &__line-two {
         color: $secondaryColor;
         margin-bottom: 40px;
+
+        @media screen and (min-width: 576px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-left: 120px;
+        }
+
     }
 
     &__select-wrapper {
@@ -153,14 +364,42 @@
         margin-bottom: 81px;
         position: relative;
 
+        @media screen and (min-width: 576px) {
+            margin-bottom: 47px;
+        }
+
         &::after {
             content: "";
-            background-image: url(./../images/testimonials/arrow.svg);
+            background-image: url(./../images/testimonials/arrow-right.svg);
             width: 6px;
             height: 11px;
             position: absolute;
             right: -4px;
             top: 7px;
+        }
+
+        @media screen and (min-width: 768px) {
+
+            &::before {
+                content: "";
+                background-image: url(./../images/testimonials/arrow-down.svg);
+                width: 11px;
+                height: 6px;
+                position: absolute;
+                left: -22px;
+                top: 9px;
+            }
+
+            &::after {
+                content: "";
+                background-image: url(./../images/testimonials/arrow-down.svg);
+                width: 11px;
+                height: 6px;
+                position: absolute;
+                right: -13px;
+                top: 9px;
+            }
+
         }
 
     }
@@ -178,6 +417,16 @@
         border: transparent;
         outline: transparent;
         cursor: pointer;
+    }
+
+    &__line-three {
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 120px;
+            margin-bottom: 45px;
+        }
+
     }
 
 }
