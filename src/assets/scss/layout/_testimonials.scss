@@ -24,6 +24,30 @@
             line-height: 29.26px;
         }
 
+        @media screen and (min-width: 1280px) {
+            text-align: left;
+            margin-top: 130px;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 40.96px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            text-align: left;
+            margin-top: 131px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 29.26px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            text-align: left;
+            margin-top: 141px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 29.26px;
+        }
+
     }
 
     &__block {
@@ -402,6 +426,13 @@
 
         }
 
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 50px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-bottom: 47px;
+        }
     }
 
     &__select {
@@ -425,6 +456,10 @@
         @media screen and (min-width: 768px) {
             margin-left: 120px;
             margin-bottom: 45px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 47px;
         }
 
     }

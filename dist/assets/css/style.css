@@ -2459,8 +2459,8 @@ hr {
         width: 11px;
         height: 6px;
         position: absolute;
-        right: -4px;
-        top: 7px;
+        left: -22px;
+        top: 9px;
     }
 
     .testimonials__select-wrapper::after {
@@ -2469,8 +2469,8 @@ hr {
         width: 11px;
         height: 6px;
         position: absolute;
-        right: -4px;
-        top: 7px;
+        right: -13px;
+        top: 9px;
     }
 }
 
