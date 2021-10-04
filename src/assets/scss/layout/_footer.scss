@@ -4,16 +4,6 @@
         @extend %container;
     }
 
-    &__wrapper {
-        max-width: 1720px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 80px 0 95px;
-    }
-
     &__top {
         // background-color: #f6a839;
         // margin-top: 5px;
@@ -24,6 +14,21 @@
         @media screen and (min-width: 576px) {
             background-color: #FAF9F8;
         }
+
+    }
+
+    &__bottom-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__span {
+
+    }
+
+    &__phone-number {
 
     }
 
