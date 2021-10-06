@@ -5,7 +5,14 @@
     }
 
     &__top-image {
-        padding-bottom: 23px;
+        padding-bottom: 24px;
+
+        @media screen and (min-width: 576px) {
+            height: 98px;
+            padding-top: 22px;
+            padding-bottom: 43px;
+        }
+
     }
 
     &__top-image-wrapper {
@@ -15,6 +22,13 @@
 
     &__logo {
         margin-top: 6px;
+
+        @media screen and (min-width: 576px) {
+            width: 129px;
+            height: 22px;
+            margin-top: 10px;
+        }
+
     }
 
     &__top-icon {
@@ -23,10 +37,28 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (min-width: 576px) {
+            margin-bottom: 7px;
+        }
+
     }
 
     &__hr {
         color: $textColorLight;
+
+        @media screen and (min-width: 576px) {
+            display: none;
+        }
+
+    }
+
+    &__top-pay {
+
+        @media screen and (min-width: 576px) {
+            display: none;
+        }
+
     }
 
     &__top-pay-wrapper {
@@ -54,8 +86,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 24px;
-        margin-bottom: 20px;
 
         @media screen and (min-width: 576px) {
             background-color: #FAF9F8;
@@ -68,6 +98,8 @@
     }
 
     &__bottom-wrapper {
+        margin-top: 24px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
