@@ -4,13 +4,39 @@
         @extend %container;
     }
 
+    &__container {
+
+        width: inherit;
+
+        @media screen and (min-width: 1280px) {
+            width: 1005px;
+            margin: 0 auto;
+        }
+
+    }
+
     &__top-image {
         padding-bottom: 24px;
 
         @media screen and (min-width: 576px) {
             height: 98px;
-            padding-top: 22px;
+            padding-top: 32px;
             padding-bottom: 43px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            padding-top: 40px;
+            padding-bottom: 27px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            padding-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            padding-top: 62px;
+            padding-bottom: 41px;
         }
 
     }
@@ -42,6 +68,31 @@
             margin-bottom: 7px;
         }
 
+        @media screen and (min-width: 1280px) {
+            width: 207px;
+        }
+
+    }
+
+    &__top-select-hidden-wrapper {
+        display: none;
+        width: 40px;
+        margin-bottom: 2px;
+        position: relative;
+
+        @media screen and (min-width: 1280px) {
+            display: block;
+        }
+
+        &::after {
+            content: "";
+            background-image: url(./../images/photo/select-arrow.svg);
+            width: 11px;
+            height: 6px;
+            position: absolute;
+            right: 0;
+            top: 7px;
+        }
     }
 
     &__hr {
@@ -112,6 +163,10 @@
             padding-top: 17px;
             padding-bottom: 17px;
             justify-content: space-between;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 630px;
         }
 
     }
@@ -219,6 +274,10 @@
             background-color: #FAF9F8;
         }
 
+        @media screen and (min-width: 1280px) {
+            background-color: initial;
+        }
+
     }
 
     &__bottom-select-wrapper {
@@ -240,6 +299,10 @@
                 top: 7px;
             }
 
+        }
+
+        @media screen and (min-width: 1280px) {
+            display: none;
         }
 
     }
