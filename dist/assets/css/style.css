@@ -2552,6 +2552,7 @@ hr {
 @media screen and (min-width: 1280px) {
     .footer__container {
         width: 1005px;
+        margin: 0 auto;
     }
 }
 
@@ -2729,6 +2730,12 @@ hr {
         padding-bottom: 17px;
         -ms-flex-pack: justify;
         justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer__bottom-wrapper {
+        width: 630px;
     }
 }
 
