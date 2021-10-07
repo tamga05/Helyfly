@@ -673,7 +673,7 @@ template {
 
 @media screen and (min-width: 1280px) {
     .photosession__image {
-        width: 555px;
+        width: 554px;
     }
 }
 
@@ -1391,6 +1391,7 @@ hr {
     font-weight: 500;
     line-height: 23.4px;
     color: #5286EC;
+    background-color: #fff;
     border: transparent;
     outline: transparent;
     cursor: pointer;
@@ -1896,7 +1897,6 @@ hr {
 
 .meet__wrapper {
     width: 275px;
-    height: 380px;
     margin: 0 auto;
     border: 1px solid #C7C7C7;
 }
@@ -1930,10 +1930,10 @@ hr {
 }
 
 .meet__swiper-photographer-about {
-    width: 130px;
+    width: 140px;
 }
 
-.meet____swiper-name {
+.meet__swiper-name {
     font-size: 16px;
     font-weight: 500;
     line-height: 19.5px;
@@ -2455,7 +2455,7 @@ hr {
 }
 
 .testimonials__select-wrapper {
-    width: 145px;
+    width: 160px;
     margin: 0 auto;
     margin-bottom: 81px;
     position: relative;
@@ -2494,7 +2494,7 @@ hr {
         width: 11px;
         height: 6px;
         position: absolute;
-        right: -13px;
+        right: 5px;
         top: 9px;
     }
 }
@@ -2523,6 +2523,7 @@ hr {
     font-weight: 500;
     line-height: 24.87px;
     color: #5286EC;
+    background-color: white;
     border: transparent;
     outline: transparent;
     cursor: pointer;
@@ -2843,6 +2844,7 @@ hr {
     font-weight: 400;
     line-height: 18.29px;
     color: #37373F;
+    background-color: white;
     border: transparent;
     outline: transparent;
     cursor: pointer;
