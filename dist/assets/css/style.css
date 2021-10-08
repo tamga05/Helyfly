@@ -519,7 +519,7 @@ body {
     font-weight: 700;
     line-height: 39px;
     color: #fff;
-    max-width: 220px;
+    max-width: 230px;
     margin-top: -6px;
 }
 
@@ -632,7 +632,7 @@ body {
     line-height: 34.13px;
     color: #37373F;
     text-align: center;
-    width: 160px;
+    width: 180px;
     margin-bottom: 15px;
 }
 
@@ -641,7 +641,7 @@ body {
         font-size: 40px;
         font-weight: 500;
         line-height: 48.76px;
-        width: 225px;
+        width: 255px;
         margin-bottom: 40px;
     }
 }
@@ -739,7 +739,7 @@ body {
 @media screen and (min-width: 1280px) {
     .photosession__text-title {
         display: initial;
-        width: 200px;
+        width: 255px;
         text-align: left;
         -ms-flex-item-align: start;
         align-self: flex-start;
@@ -751,13 +751,30 @@ body {
     font-weight: 400;
     line-height: 20.48px;
     color: #37373F;
-    width: 265px;
+    width: 100%;
     margin-bottom: 30px;
 }
 
 @media screen and (min-width: 576px) {
     .photosession__text {
-        width: 445px;
+        display: none;
+    }
+}
+
+.photosession__text-hidden {
+    display: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.48px;
+    color: #37373F;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 576px) {
+    .photosession__text-hidden {
+        display: block;
+        width: 475px;
         font-size: 18px;
         line-height: 26.33px;
     }
@@ -885,7 +902,7 @@ body {
     content: "";
     background-image: url(./../images/photosession/cup.svg);
     width: 37px;
-    height: 42px;
+    height: 41px;
     position: absolute;
     left: -57px;
     top: 0;
@@ -945,7 +962,7 @@ body {
     }
 
     .photosession__item-comment::after {
-        left: 234px;
+        left: 262px;
         top: 5px;
     }
 
@@ -1004,6 +1021,26 @@ hr {
 
 @media screen and (min-width: 768px) {
     .photo__title {
+        display: none;
+    }
+}
+
+.photo__title-hidden {
+    display: none;
+    width: 215px;
+    margin: 0 auto;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.69px;
+    color: #37373F;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .photo__title-hidden {
+        display: block;
         width: 215px;
         margin: 0;
         font-size: 20px;
@@ -1017,7 +1054,7 @@ hr {
 }
 
 @media screen and (min-width: 1280px) {
-    .photo__title {
+    .photo__title-hidden {
         width: 315px;
         font-size: 28px;
         font-weight: 500;
@@ -1029,7 +1066,7 @@ hr {
 }
 
 @media screen and (min-width: 1440px) {
-    .photo__title {
+    .photo__title-hidden {
         width: 220px;
         font-size: 20px;
         font-weight: 500;
@@ -1145,7 +1182,7 @@ hr {
     width: 11px;
     height: 6px;
     position: absolute;
-    left: 0;
+    left: -10px;
     top: 12px;
 }
 
@@ -1155,7 +1192,7 @@ hr {
     width: 11px;
     height: 6px;
     position: absolute;
-    right: 0;
+    right: -10px;
     bottom: 12px;
 }
 
@@ -1203,7 +1240,7 @@ hr {
 }
 
 .photographer__about {
-    width: 177px;
+    width: 200px;
     padding-top: 68px;
     margin: 0 auto;
     display: -ms-flexbox;
@@ -1333,7 +1370,7 @@ hr {
     width: 11px;
     height: 6px;
     position: absolute;
-    right: -7px;
+    right: -20px;
     top: 10px;
 }
 
@@ -1363,7 +1400,7 @@ hr {
     width: 11px;
     height: 6px;
     position: absolute;
-    right: -7px;
+    right: -20px;
     top: 10px;
 }
 
@@ -1416,7 +1453,7 @@ hr {
 }
 
 .price__title {
-    width: 243px;
+    width: 278px;
     font-size: 26px;
     font-weight: 400;
     line-height: 31.69px;
@@ -1428,41 +1465,61 @@ hr {
 
 @media screen and (min-width: 576px) {
     .price__title {
+        display: none;
+    }
+}
+
+.price__title-hidden {
+    width: 285px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.69px;
+    color: #37373F;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .price__title-hidden {
+        display: block;
         padding-top: 21px;
+        line-height: 38.03px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .price__title {
+    .price__title-hidden {
         padding-top: 60px;
         font-size: 20px;
         font-weight: 500;
         line-height: 29.26px;
         margin: 0;
-        width: 187px;
+        width: 225px;
         text-align: left;
         padding-bottom: 30px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .price__title {
+    .price__title-hidden {
         font-size: 28px;
         font-weight: 500;
         line-height: 40.96px;
-        width: 235px;
+        width: 315px;
         padding-top: 50px;
         padding-bottom: 40px;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .price__title {
+    .price__title-hidden {
         font-size: 20px;
         font-weight: 500;
         line-height: 29.26px;
         padding-bottom: 30px;
-        width: 168px;
+        width: 250px;
     }
 }
 
@@ -1516,7 +1573,7 @@ hr {
 }
 
 .price__date-link {
-    width: 200px;
+    width: 205px;
     font-size: 18px;
     font-weight: 400;
     line-height: 26.33px;
@@ -1689,7 +1746,7 @@ hr {
     width: 35px;
     height: 42px;
     position: absolute;
-    left: 20px;
+    left: 19px;
     top: 31px;
 }
 
@@ -1721,13 +1778,13 @@ hr {
 @media screen and (min-width: 576px) {
     .price__comment::after {
         bottom: 36px;
-        left: 314px;
+        left: 343px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .price__comment::after {
-        left: 305px;
+        left: 352px;
     }
 }
 
@@ -2076,6 +2133,24 @@ hr {
 
 @media screen and (min-width: 768px) {
     .testimonials__title {
+        display: none;
+    }
+}
+
+.testimonials__title-hidden {
+    display: none;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 39.3px;
+    color: #37373F;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonials__title-hidden {
+        display: block;
         text-align: left;
         margin-top: 19px;
         font-size: 20px;
@@ -2085,7 +2160,7 @@ hr {
 }
 
 @media screen and (min-width: 1280px) {
-    .testimonials__title {
+    .testimonials__title-hidden {
         text-align: left;
         margin-top: 130px;
         font-size: 28px;
@@ -2095,7 +2170,7 @@ hr {
 }
 
 @media screen and (min-width: 1440px) {
-    .testimonials__title {
+    .testimonials__title-hidden {
         text-align: left;
         margin-top: 131px;
         font-size: 20px;
@@ -2105,7 +2180,7 @@ hr {
 }
 
 @media screen and (min-width: 1920px) {
-    .testimonials__title {
+    .testimonials__title-hidden {
         text-align: left;
         margin-top: 141px;
         font-size: 20px;
@@ -2331,9 +2406,15 @@ hr {
     quotes: none;
 }
 
+@media screen and (min-width: 576px) {
+    .testimonials__quote-one {
+        width: 490px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .testimonials__quote-one {
-        width: 415px;
+        width: 510px;
         font-size: 16px;
         font-weight: 400;
         line-height: 24.18px;
@@ -2377,7 +2458,7 @@ hr {
 
 @media screen and (min-width: 768px) {
     .testimonials__quote-two {
-        width: 430px;
+        width: 510px;
         font-size: 16px;
         font-weight: 400;
         line-height: 24.18px;
@@ -2415,7 +2496,7 @@ hr {
 
 @media screen and (min-width: 768px) {
     .testimonials__quote-three {
-        width: 415px;
+        width: 500px;
         font-size: 16px;
         font-weight: 400;
         line-height: 24.18px;
@@ -2488,8 +2569,8 @@ hr {
     width: 6px;
     height: 11px;
     position: absolute;
-    right: -4px;
-    top: 6px;
+    right: -12px;
+    top: 7px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2509,7 +2590,7 @@ hr {
         width: 11px;
         height: 6px;
         position: absolute;
-        right: 5px;
+        right: -22px;
         top: 9px;
     }
 }

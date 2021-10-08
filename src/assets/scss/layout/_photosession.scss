@@ -27,14 +27,14 @@
         line-height: 34.13px;
         color: $textColor;
         text-align: center;
-        width: 160px;
+        width: 180px;
         margin-bottom: 15px;
 
         @media screen and (min-width: 768px) {
             font-size: 40px;
             font-weight: 500;
             line-height: 48.76px;
-            width: 225px;
+            width: 255px;
             margin-bottom: 40px;
         }
 
@@ -129,7 +129,7 @@
 
         @media screen and (min-width: 1280px) {
             display: initial;
-            width: 200px;
+            width: 255px;
             text-align: left;
             align-self: flex-start;
         }
@@ -141,11 +141,27 @@
         font-weight: 400;
         line-height: 20.48px;
         color: $textColor;
-        width: 265px;
+        width: 100%;
         margin-bottom: 30px;
 
         @media screen and (min-width: 576px) {
-            width: 445px;
+            display: none;
+        }
+
+    }
+
+    &__text-hidden {
+        display: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20.48px;
+        color: $textColor;
+        width: 100%;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 576px) {
+            display: block;
+            width: 475px;
             font-size: 18px;
             line-height: 26.33px;
         }
@@ -272,7 +288,7 @@
             content: "";
             background-image: url(./../images/photosession/cup.svg);
             width: 37px;
-            height: 42px;
+            height: 41px;
             position: absolute;
             left: -57px;
             top: 0;
@@ -330,7 +346,7 @@
             }
 
             &::after {
-                left: 234px;
+                left: 262px;
                 top: 5px;
             }
 
