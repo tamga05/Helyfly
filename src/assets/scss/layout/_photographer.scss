@@ -15,7 +15,7 @@
     }
 
     &__about {
-        width: 155px;
+        width: 177px;
         padding-top: 68px;
         margin: 0 auto;
         display: flex;
@@ -45,7 +45,7 @@
 
     &__name {
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 21.94px;
         color: $textColor;
         margin-bottom: 7px;
@@ -85,7 +85,7 @@
 
     &__subtitle-organizer {
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 26.33px;
         color: $textColor;
 
@@ -116,7 +116,7 @@
 
     &__subtitle-provider {
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 26.33px;
         color: $textColor;
         margin-bottom: 14px;
@@ -134,7 +134,7 @@
             width: 11px;
             height: 6px;
             position: absolute;
-            right: 0;
+            right: -7px;
             top: 10px;
         }
 
@@ -161,7 +161,7 @@
             width: 11px;
             height: 6px;
             position: absolute;
-            right: 0;
+            right: -7px;
             top: 10px;
         }
 
@@ -186,6 +186,7 @@
         font-weight: 500;
         line-height: 23.4px;
         color: #5286EC;
+        background-color: #fff;
         border: transparent;
         outline: transparent;
         cursor: pointer;

@@ -375,7 +375,8 @@
     }
 
     &__select-wrapper {
-        width: 145px;
+        //width: 145px;
+        width: 160px;
         margin: 0 auto;
         margin-bottom: 81px;
         position: relative;
@@ -390,8 +391,9 @@
             width: 6px;
             height: 11px;
             position: absolute;
-            right: -4px;
-            top: 7px;
+            //right: -4px;
+            right: 0;
+            top: 6px;
         }
 
         @media screen and (min-width: 768px) {
@@ -412,7 +414,8 @@
                 width: 11px;
                 height: 6px;
                 position: absolute;
-                right: -13px;
+                //right: -13px;
+                right: 5px;
                 top: 9px;
             }
 
@@ -437,6 +440,7 @@
         font-weight: 500;
         line-height: 24.87px;
         color: #5286EC;
+        background-color: white;
         border: transparent;
         outline: transparent;
         cursor: pointer;

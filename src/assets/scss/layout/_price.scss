@@ -5,7 +5,7 @@
     }
 
     &__title {
-        width: 220px;
+        width: 243px;
         font-size: 26px;
         font-weight: 400;
         line-height: 31.69px;
@@ -89,7 +89,7 @@
     }
 
     &__date-link {
-        width: 180px;
+        width: 200px;
         font-size: 18px;
         font-weight: 400;
         line-height: 26.33px;
@@ -106,6 +106,20 @@
 
         }
 
+    }
+
+    &__span {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26.33px;
+        color: $textColor;
+    }
+
+    &__span-min {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 19.02px;
+        color: $textColor;
     }
 
     &__calendar-link {

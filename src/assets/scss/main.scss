@@ -1,10 +1,5 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "./base/normalize.scss";
+
 
 // :root {
 //     --swiper-navigation-size: 20px;
@@ -17,16 +12,12 @@
 html,
 body {
     font-family: 'Montserrat', sans-serif;
-
 }
 
 
 body {
     min-width: 320px;
 }
-
-
-@import "./base/normalize.scss";
 
 
 @import "./abstracts/variables";
