@@ -584,7 +584,7 @@ body {
     font-size: 40px;
     font-weight: 500;
     line-height: 48.76px;
-    width: 200px;
+    width: 225px;
     margin-bottom: 40px;
   }
 }
@@ -840,7 +840,7 @@ body {
     top: -10px;
   }
   .photosession__item-comment::after {
-    left: 215px;
+    left: 234px;
     top: 5px;
   }
   .photosession__link-min {
@@ -891,6 +891,24 @@ hr {
 }
 @media screen and (min-width: 768px) {
   .photo__title {
+    display: none;
+  }
+}
+.photo__title-hidden {
+  display: none;
+  width: 215px;
+  margin: 0 auto;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31.69px;
+  color: #37373F;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .photo__title-hidden {
+    display: block;
     width: 215px;
     margin: 0;
     font-size: 20px;
@@ -903,7 +921,7 @@ hr {
   }
 }
 @media screen and (min-width: 1280px) {
-  .photo__title {
+  .photo__title-hidden {
     width: 315px;
     font-size: 28px;
     font-weight: 500;
@@ -914,7 +932,7 @@ hr {
   }
 }
 @media screen and (min-width: 1440px) {
-  .photo__title {
+  .photo__title-hidden {
     width: 220px;
     font-size: 20px;
     font-weight: 500;
@@ -1242,23 +1260,41 @@ hr {
 }
 @media screen and (min-width: 576px) {
   .price__title {
+    display: none;
+  }
+}
+.price__title-hidden {
+  width: 255px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31.69px;
+  color: #37373F;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  .price__title-hidden {
+    display: block;
     padding-top: 21px;
+    line-height: 38.03px;
   }
 }
 @media screen and (min-width: 768px) {
-  .price__title {
+  .price__title-hidden {
     padding-top: 60px;
     font-size: 20px;
     font-weight: 500;
     line-height: 29.26px;
     margin: 0;
-    width: 168px;
+    width: 195px;
     text-align: left;
     padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .price__title {
+  .price__title-hidden {
     font-size: 28px;
     font-weight: 500;
     line-height: 40.96px;
@@ -1268,7 +1304,7 @@ hr {
   }
 }
 @media screen and (min-width: 1440px) {
-  .price__title {
+  .price__title-hidden {
     font-size: 20px;
     font-weight: 500;
     line-height: 29.26px;
@@ -1489,17 +1525,17 @@ hr {
 }
 @media screen and (min-width: 576px) {
   .price__comment::after {
-    bottom: 35px;
-    left: 295px;
+    bottom: 36px;
+    left: 314px;
   }
 }
 @media screen and (min-width: 768px) {
   .price__comment::after {
-    left: 305px;
+    left: 322px;
   }
 }
 .price__link-min {
-  width: 215px;
+  width: 265px;
   text-decoration: none;
   display: none;
 }
@@ -1794,6 +1830,22 @@ hr {
 }
 @media screen and (min-width: 768px) {
   .testimonials__title {
+    display: none;
+  }
+}
+.testimonials__title-hidden {
+  display: none;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 39.3px;
+  color: #37373F;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .testimonials__title-hidden {
+    display: block;
     text-align: left;
     margin-top: 19px;
     font-size: 20px;
@@ -1802,7 +1854,7 @@ hr {
   }
 }
 @media screen and (min-width: 1280px) {
-  .testimonials__title {
+  .testimonials__title-hidden {
     text-align: left;
     margin-top: 130px;
     font-size: 28px;
@@ -1811,7 +1863,7 @@ hr {
   }
 }
 @media screen and (min-width: 1440px) {
-  .testimonials__title {
+  .testimonials__title-hidden {
     text-align: left;
     margin-top: 131px;
     font-size: 20px;
@@ -1820,7 +1872,7 @@ hr {
   }
 }
 @media screen and (min-width: 1920px) {
-  .testimonials__title {
+  .testimonials__title-hidden {
     text-align: left;
     margin-top: 141px;
     font-size: 20px;
@@ -2146,7 +2198,7 @@ hr {
   width: 6px;
   height: 11px;
   position: absolute;
-  right: 0;
+  right: -4px;
   top: 6px;
 }
 @media screen and (min-width: 768px) {
@@ -2165,7 +2217,7 @@ hr {
     width: 11px;
     height: 6px;
     position: absolute;
-    right: 5px;
+    right: -11px;
     top: 9px;
   }
 }
