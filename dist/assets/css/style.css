@@ -1842,6 +1842,10 @@ hr {
     .map__wrapper {
         margin-top: 82px;
         position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 }
 
@@ -1866,8 +1870,6 @@ hr {
     .map__pointer {
         display: block;
         position: absolute;
-        top: 20px;
-        left: 70px;
     }
 }
 

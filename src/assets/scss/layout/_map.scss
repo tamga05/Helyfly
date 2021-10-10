@@ -19,6 +19,8 @@
             margin-top: 82px;
             //margin-bottom: 131px;
             position: relative;
+            display: flex;
+            justify-content: center;
         }
 
         @media screen and (min-width: 1920px) {
@@ -42,16 +44,16 @@
             display: block;
             position: absolute;
             top: 20px;
-            left: 70px;
+            transform: translateX(-360px);
         }
 
         @media screen and (min-width: 1440px) {
-            top: 20px;
-            left: 150px;
+            //top: 20px;
+            //left: 150px;
         }
 
         @media screen and (min-width: 1920px) {
-            left: 390px;
+            //left: 390px;
         }
 
     }
