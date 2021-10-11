@@ -114,16 +114,8 @@
 
     }
 
-    &__subtitle-provider {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 26.33px;
-        color: $textColor;
-        margin-bottom: 14px;
-    }
-
-    &__select-first {
-        width: 100px;
+    &__details-first {
+        width: 100%;
         margin-top: 43px;
         margin-bottom: 30px;
         position: relative;
@@ -134,7 +126,7 @@
             width: 11px;
             height: 6px;
             position: absolute;
-            right: -20px;
+            left: 105px;
             top: 10px;
         }
 
@@ -149,8 +141,8 @@
 
     }
 
-    &__select-second {
-        width: 100px;
+    &__details-second {
+        width: 100%;
         margin-top: 22px;
         margin-bottom: 40px;
         position: relative;
@@ -161,7 +153,7 @@
             width: 11px;
             height: 6px;
             position: absolute;
-            right: -20px;
+            left: 105px;
             top: 10px;
         }
 
@@ -176,7 +168,7 @@
 
     }
 
-    &__select {
+    &__details-title {
         width: 100%;
         height: 19px;
         text-align: left;
@@ -190,7 +182,90 @@
         border: transparent;
         outline: transparent;
         cursor: pointer;
+
+        &::marker {
+            content: "";
+        }
+
     }
+
+    &__subtitle-provider {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26.33px;
+        color: $textColor;
+        margin-bottom: 14px;
+    }
+
+    // &__select-first {
+    //     width: 100px;
+    //     margin-top: 43px;
+    //     margin-bottom: 30px;
+    //     position: relative;
+
+    //     &::after {
+    //         content: "";
+    //         background-image: url(./../images/photo/select-arrow.svg);
+    //         width: 11px;
+    //         height: 6px;
+    //         position: absolute;
+    //         right: -20px;
+    //         top: 10px;
+    //     }
+
+    //     @media screen and (min-width: 576px) {
+    //         margin-top: 22px;
+    //         margin-bottom: 40px;
+    //     }
+
+    //     @media screen and (min-width: 768px) {
+    //         margin-top: 5px;
+    //     }
+
+    // }
+
+    // &__select-second {
+    //     width: 100px;
+    //     margin-top: 22px;
+    //     margin-bottom: 40px;
+    //     position: relative;
+
+    //     &::after {
+    //         content: "";
+    //         background-image: url(./../images/photo/select-arrow.svg);
+    //         width: 11px;
+    //         height: 6px;
+    //         position: absolute;
+    //         right: -20px;
+    //         top: 10px;
+    //     }
+
+    //     @media screen and (min-width: 576px) {
+    //         margin-bottom: 52px;
+    //     }
+
+    //     @media screen and (min-width: 768px) {
+    //         margin-top: 10px;
+    //         margin-bottom: 50px;
+    //     }
+
+    // }
+
+    // &__select {
+    //     width: 100%;
+    //     height: 19px;
+    //     text-align: left;
+    //     appearance: none;
+    //     overflow: hidden;
+    //     font-size: 16px;
+    //     font-weight: 500;
+    //     line-height: 23.4px;
+    //     color: #5286EC;
+    //     background-color: #fff;
+    //     border: transparent;
+    //     outline: transparent;
+    //     cursor: pointer;
+    // }
 
     &__hr {
         color: $secondaryColor;
