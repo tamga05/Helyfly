@@ -611,6 +611,10 @@ body {
     opacity: 0.7;
 }
 
+.main-block__link {
+    text-decoration: none;
+}
+
 @media screen and (min-width: 1280px) {
     .photosession__wrapper {
         display: -ms-flexbox;
