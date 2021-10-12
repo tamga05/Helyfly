@@ -361,14 +361,6 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-summary::marker {
-    display: none;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
 body {
     min-width: 320px;
 }
@@ -1376,7 +1368,7 @@ hr {
     width: 11px;
     height: 6px;
     position: absolute;
-    right: -20px;
+    left: 105px;
     top: 10px;
 }
 
@@ -1394,7 +1386,7 @@ hr {
 }
 
 .photographer__details-second {
-    width: 120px;
+    width: 100%;
     margin-top: 22px;
     margin-bottom: 40px;
     position: relative;
@@ -1406,7 +1398,7 @@ hr {
     width: 11px;
     height: 6px;
     position: absolute;
-    right: -20px;
+    left: 105px;
     top: 10px;
 }
 
@@ -1441,8 +1433,8 @@ hr {
     cursor: pointer;
 }
 
-.photographer__details-title::-webkit-details-marker {
-    display: none;
+.photographer__details-title::marker {
+    content: "";
 }
 
 .photographer__subtitle-provider {
