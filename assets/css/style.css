@@ -605,6 +605,12 @@ body {
     transform: translateY(-6px);
 }
 
+.main-block__btn:hover {
+    background: #FC9B09;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.7;
+}
+
 @media screen and (min-width: 1280px) {
     .photosession__wrapper {
         display: -ms-flexbox;
@@ -1349,75 +1355,67 @@ hr {
     }
 }
 
-.photographer__subtitle-provider {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26.33px;
-    color: #37373F;
-    margin-bottom: 14px;
-}
-
-.photographer__select-first {
-    width: 100px;
+.photographer__details-first {
+    width: 100%;
     margin-top: 43px;
     margin-bottom: 30px;
     position: relative;
 }
 
-.photographer__select-first::after {
+.photographer__details-first::after {
     content: "";
     background-image: url(./../images/photo/select-arrow.svg);
     width: 11px;
     height: 6px;
     position: absolute;
-    right: -20px;
+    left: 105px;
     top: 10px;
 }
 
 @media screen and (min-width: 576px) {
-    .photographer__select-first {
+    .photographer__details-first {
         margin-top: 22px;
         margin-bottom: 40px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .photographer__select-first {
+    .photographer__details-first {
         margin-top: 5px;
     }
 }
 
-.photographer__select-second {
-    width: 100px;
+.photographer__details-second {
+    width: 100%;
     margin-top: 22px;
     margin-bottom: 40px;
     position: relative;
 }
 
-.photographer__select-second::after {
+.photographer__details-second::after {
     content: "";
     background-image: url(./../images/photo/select-arrow.svg);
     width: 11px;
     height: 6px;
     position: absolute;
-    right: -20px;
+    left: 105px;
     top: 10px;
 }
 
 @media screen and (min-width: 576px) {
-    .photographer__select-second {
+    .photographer__details-second {
         margin-bottom: 52px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .photographer__select-second {
+    .photographer__details-second {
         margin-top: 10px;
         margin-bottom: 50px;
     }
 }
 
-.photographer__select {
+.photographer__details-title {
     width: 100%;
     height: 19px;
     text-align: left;
@@ -1433,6 +1431,18 @@ hr {
     border: transparent;
     outline: transparent;
     cursor: pointer;
+}
+
+.photographer__details-title::marker {
+    content: "";
+}
+
+.photographer__subtitle-provider {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.33px;
+    color: #37373F;
+    margin-bottom: 14px;
 }
 
 .photographer__hr {
@@ -1873,6 +1883,12 @@ hr {
         top: 20px;
         -webkit-transform: translateX(-360px);
         transform: translateX(-360px);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .map__pointer {
+        top: 30px;
     }
 }
 
