@@ -17,7 +17,6 @@
         @media screen and (min-width: 576px) {
             display: none;
         }
-
     }
 
     &__title-hidden {
@@ -64,7 +63,6 @@
             padding-bottom: 30px;
             width: 250px;
         }
-
     }
 
     &__wrapper {
@@ -72,7 +70,6 @@
         @media screen and (min-width: 1280px) {
             width: 770px;
         }
-
     }
 
     &__date {
@@ -104,7 +101,6 @@
             padding-left: 30px;
             align-items: center;
         }
-
     }
 
     &__date-link {
@@ -120,11 +116,6 @@
             pointer-events: none;
             cursor: default;
         }
-
-        @media screen and (min-width: 768px) {
-
-        }
-
     }
 
     &__span {
@@ -154,7 +145,6 @@
             justify-content: center;
             align-items: center;
         }
-
     }
 
     &__btn {
@@ -179,7 +169,6 @@
             padding-left: 30px;
             padding-right: 30px;
         }
-
     }
 
     &__time {
@@ -200,7 +189,6 @@
         @media screen and (min-width: 576px) {
             display: none;
         }
-
     }
 
     &__cost-max {
@@ -214,7 +202,6 @@
         @media screen and (min-width: 576px) {
             display: block;
         }
-
     }
 
     &__place {
@@ -227,7 +214,6 @@
         @media screen and (min-width: 576px) {
             margin-bottom: 0;
         }
-
     }
 
     &__btn-first {
@@ -253,7 +239,6 @@
             color: #fff;
             cursor: pointer;
         }
-
     }
 
     &__btn-second {
@@ -293,14 +278,13 @@
         &:hover:after {
             width: 110%;
         }
-
     }
 
     &__comment {
         border: 1px solid $secondaryColor;
         padding-left: 20px;
         padding-top: 32px;
-        padding-bottom: 48px;
+        padding-bottom: 18px;
         font-size: 13px;
         font-weight: 400;
         line-height: 19.02px;
@@ -335,29 +319,27 @@
             @media screen and (min-width: 768px) {
                 left: 30px;
             }
-
         }
 
-        &::after {
-            content: "";
-            background-image: url(./../images/photosession/starblock.svg);
-            width: 118px;
-            height: 17px;
-            position: absolute;
-            left: 80px;
-            bottom: 27px;
+        // &::after {
+        //     content: "";
+        //     background-image: url(./../images/photosession/starblock.svg);
+        //     width: 118px;
+        //     height: 17px;
+        //     position: absolute;
+        //     left: 80px;
+        //     bottom: 27px;
 
-            @media screen and (min-width: 576px) {
-                bottom: 36px;
-                left: 343px;
-            }
+        //     @media screen and (min-width: 576px) {
+        //         bottom: 36px;
+        //         left: 343px;
+        //     }
 
-            @media screen and (min-width: 768px) {
-                left: 352px;
-            }
+        //     @media screen and (min-width: 768px) {
+        //         left: 352px;
+        //     }
 
-        }
-
+        // }
     }
 
     &__link-min {
@@ -373,7 +355,6 @@
         @media screen and (min-width: 768px) {
             margin-left: 60px;
         }
-
     }
 
     &__link-max {
@@ -383,7 +364,20 @@
         @media screen and (min-width: 576px) {
             display: none;
         }
-
     }
 
+    &__rating {
+        margin-left: 60px;
+
+        @media screen and (min-width: 576px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(281px, 32px);
+        }
+
+        @media screen and (min-width: 768px) {
+            transform: translate(291px, 32px);
+        }
+    }
 }
