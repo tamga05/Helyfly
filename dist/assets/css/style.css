@@ -390,7 +390,7 @@ body {
 }
 
 .rating {
-    width: 100px;
+    width: 115px;
     font-size: 24px;
     overflow: hidden;
 }
@@ -2461,7 +2461,16 @@ hr {
     }
 }
 
+.testimonials__rating-one {
+    margin-left: -15px;
+}
+
+.testimonials__rating-two {
+    margin-left: -15px;
+}
+
 .testimonials__rating-three {
+    margin-left: -15px;
     margin-top: 20px;
 }
 

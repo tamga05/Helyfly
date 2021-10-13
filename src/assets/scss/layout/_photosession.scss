@@ -308,6 +308,7 @@
     }
 
     &__rating {
+        margin-left: -15px;
         @media screen and (min-width: 576px) {
             position: absolute;
             top: 0;
