@@ -1034,6 +1034,10 @@ body {
     }
 }
 
+.photosession__rating {
+    margin-left: -15px;
+}
+
 @media screen and (min-width: 576px) {
     .photosession__rating {
         position: absolute;
@@ -1924,7 +1928,7 @@ hr {
 }
 
 .price__rating {
-    margin-left: 60px;
+    margin-left: 45px;
 }
 
 @media screen and (min-width: 576px) {
