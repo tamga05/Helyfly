@@ -1,0 +1,310 @@
+// /* body {
+//     background: #FDFDFD;
+//     font-family: "Segoe WP","Segoe UI", Helvetica, Arial, sans-serif;
+//     text-align:center;
+// }
+// h1, h2 {
+//     color: #888;
+//     margin:0;
+//     font-weight:normal;
+// }
+// h1{ padding-top: 1.5em; padding-bottom: 2em; }
+// h2 {
+//     clear:both;
+//     color: #aaa;
+//     padding: 2em 0 0.3em
+// }
+// em {
+//     display: block;
+//     margin: .5em auto 2em;
+//     color: #bbb;
+// }
+
+// p, p a {
+//     color: #aaa;
+//     text-decoration: none;
+// }
+// p a:hover,
+// p a:focus {
+
+// }
+// p + p { color: #bbb; margin-top: 2em;}
+// .detail {position: absolute; text-align: right; right: 5px; bottom: 5px; width: 50%;}
+
+// a[href*="intent"] {
+//     display:inline-block;
+//     margin-top: 0.4em;
+// }
+// */
+
+
+
+
+
+// Rating styles //
+
+.rating {
+    //width: 226px;
+    width: 115px;
+    //margin: 0 auto 1em;
+    //font-size: 25px;
+    font-size: 24px;
+    overflow: hidden;
+}
+.rating input {
+    float: right;
+    opacity: 0;
+    position: absolute;
+}
+.rating a,
+.rating label {
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    // transition: color 0.4s;
+}
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover,
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a {
+    color: #FC9B09;
+    cursor: pointer;
+}
+
+.rating2 {
+    direction: rtl;
+}
+.rating2 a {
+    float: none;
+}
+
+// //! Захардкорживание Оранжевого цвета во всех звездах рейтинга одновременно
+
+// //TODO Захардкорживание Оранжевого цвета во всех звездах рейтинга одновременно
+
+// Захардкорживание Оранжевого цвета во всех звездах рейтинга одновременно
+
+// //? Захардкорживание Оранжевого цвета во всех звездах рейтинга одновременно
+
+// //* Захардкорживание Оранжевого цвета во всех звездах рейтинга одновременно
+
+.rating>a {
+    color: #FC9B09;
+}
+
+// /*
+//  *  Pure CSS star rating that works without reversing order
+//  *  of inputs
+//  *  -------------------------------------------------------
+//  *  NOTE: For the styling to work, there needs to be a radio
+//  *        input selected by default. There also needs to be a
+//  *        radio input before the first star, regardless of
+//  *        whether you offer a 'no rating' or 0 stars option
+//  *
+//  *  This codepen uses FontAwesome icons
+//  */
+
+//  #full-stars-example {
+
+//     /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+//     .rating-group {
+//       display: inline-flex;
+//     }
+
+//     /* make hover effect work properly in IE */
+//     .rating__icon {
+//       pointer-events: none;
+//     }
+
+//     /* hide radio inputs */
+//     .rating__input {
+//      position: absolute !important;
+//      left: -9999px !important;
+//     }
+
+//     /* set icon padding and size */
+//     .rating__label {
+//       cursor: pointer;
+//       padding: 0 0.1em;
+//       font-size: 2rem;
+//     }
+
+//     /* set default star color */
+//     .rating__icon--star {
+//       color: orange;
+//     }
+
+//     /* set color of none icon when unchecked */
+//     .rating__icon--none {
+//       color: #eee;
+//     }
+
+//     /* if none icon is checked, make it red */
+//     .rating__input--none:checked + .rating__label .rating__icon--none {
+//       color: red;
+//     }
+
+//     /* if any input is checked, make its following siblings grey */
+//     .rating__input:checked ~ .rating__label .rating__icon--star {
+//       color: #ddd;
+//     }
+
+//     /* make all stars orange on rating group hover */
+//     .rating-group:hover .rating__label .rating__icon--star {
+//       color: orange;
+//     }
+
+//     /* make hovered input's following siblings grey on hover */
+//     .rating__input:hover ~ .rating__label .rating__icon--star {
+//       color: #ddd;
+//     }
+
+//     /* make none icon grey on rating group hover */
+//     .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+//        color: #eee;
+//     }
+
+//     /* make none icon red on hover */
+//     .rating__input--none:hover + .rating__label .rating__icon--none {
+//       color: red;
+//     }
+//   }
+
+//   #half-stars-example {
+
+//     /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+//     .rating-group {
+//       display: inline-flex;
+//     }
+
+//     /* make hover effect work properly in IE */
+//     .rating__icon {
+//       pointer-events: none;
+//     }
+
+//     /* hide radio inputs */
+//     .rating__input {
+//      position: absolute !important;
+//      left: -9999px !important;
+//     }
+
+//     /* set icon padding and size */
+//     .rating__label {
+//       cursor: pointer;
+//       /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+//       padding: 0 0.1em;
+//       font-size: 2rem;
+//     }
+
+//     /* add padding and positioning to half star labels */
+//     .rating__label--half {
+//       padding-right: 0;
+//       margin-right: -0.6em;
+//       z-index: 2;
+//     }
+
+//     /* set default star color */
+//     .rating__icon--star {
+//       color: orange;
+//     }
+
+//     /* set color of none icon when unchecked */
+//     .rating__icon--none {
+//       color: #eee;
+//     }
+
+//     /* if none icon is checked, make it red */
+//     .rating__input--none:checked + .rating__label .rating__icon--none {
+//       color: red;
+//     }
+
+//     /* if any input is checked, make its following siblings grey */
+//     .rating__input:checked ~ .rating__label .rating__icon--star {
+//       color: #ddd;
+//     }
+
+//     /* make all stars orange on rating group hover */
+//     .rating-group:hover .rating__label .rating__icon--star,
+//     .rating-group:hover .rating__label--half .rating__icon--star {
+//       color: orange;
+//     }
+
+//     /* make hovered input's following siblings grey on hover */
+//     .rating__input:hover ~ .rating__label .rating__icon--star,
+//     .rating__input:hover ~ .rating__label--half .rating__icon--star {
+//       color: #ddd;
+//     }
+
+//     /* make none icon grey on rating group hover */
+//     .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+//        color: #eee;
+//     }
+
+//     /* make none icon red on hover */
+//     .rating__input--none:hover + .rating__label .rating__icon--none {
+//       color: red;
+//     }
+//   }
+
+//   #full-stars-example-two {
+
+//     /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+//     .rating-group {
+//       display: inline-flex;
+//     }
+
+//     /* make hover effect work properly in IE */
+//     .rating__icon {
+//       pointer-events: none;
+//     }
+
+//     /* hide radio inputs */
+//     .rating__input {
+//      position: absolute !important;
+//      left: -9999px !important;
+//     }
+
+//     /* hide 'none' input from screenreaders */
+//     .rating__input--none {
+//       display: none
+//     }
+
+//     /* set icon padding and size */
+//     .rating__label {
+//       cursor: pointer;
+//       padding: 0 0.1em;
+//       font-size: 2rem;
+//     }
+
+//     /* set default star color */
+//     .rating__icon--star {
+//       color: orange;
+//     }
+
+//     /* if any input is checked, make its following siblings grey */
+//     .rating__input:checked ~ .rating__label .rating__icon--star {
+//       color: #ddd;
+//     }
+
+//     /* make all stars orange on rating group hover */
+//     .rating-group:hover .rating__label .rating__icon--star {
+//       color: orange;
+//     }
+
+//     /* make hovered input's following siblings grey on hover */
+//     .rating__input:hover ~ .rating__label .rating__icon--star {
+//       color: #ddd;
+//     }
+//   }
+
+
+//   body {
+//     padding: 1rem;
+//     text-align: center;
+//   }
+
+
+
