@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="./assets/css/style.min.css">
@@ -22,7 +24,7 @@
 
 <body>
 
-    <section class="header">
+    <header class="header">
 
         <div class="container">
 
@@ -58,7 +60,7 @@
 
         </div>
 
-    </section>
+    </header>
 
     <section class="main-block">
 
@@ -170,15 +172,15 @@
 
                             <div class="rating photosession__rating">
 
-                                <a href="#5" title="FANTASTICO IRREALE !!!">★</a>
+                                <a class="ancor" href="#5" title="FANTASTICO IRREALE !!!"><img class="photosession__rating-star" src="./assets/images/photosession/rating-star.svg" alt="#"></a>
 
-                                <a href="#4" title="Это - БОМБА!">★</a>
+                                <a class="ancor" href="#4" title="Это - БОМБА!"><img class="photosession__rating-star" src="./assets/images/photosession/rating-star.svg" alt="#"></a>
 
-                                <a href="#3" title="Нууу, можно разок прокатиться...">★</a>
+                                <a class="ancor" href="#3" title="Нууу, можно разок прокатиться..."><img class="photosession__rating-star" src="./assets/images/photosession/rating-star.svg" alt="#"></a>
 
-                                <a href="#2" title="Нет уж, давайте-ка теперь без меня...">★</a>
+                                <a class="ancor" href="#2" title="Нет уж, давайте-ка теперь без меня..."><img class="photosession__rating-star" src="./assets/images/photosession/rating-star.svg" alt="#"></a>
 
-                                <a href="#1" title="Что это вообще было???">★</a>
+                                <a class="ancor" href="#1" title="Это что вообще было???"><img class="photosession__rating-star" src="./assets/images/photosession/rating-star.svg" alt="#"></a>
 
                             </div>
 
@@ -422,15 +424,15 @@
 
                     <div class="rating price__rating">
 
-                        <a href="#5" title="FANTASTICO IRREALE !!!">★</a>
+                        <a href="#5" title="FANTASTICO IRREALE !!!"><img class="price__rating-star" src="./assets/images/photosession/rating-star.svg" alt="#"></a>
 
-                        <a href="#4" title="Это - БОМБА!">★</a>
+                        <a href="#4" title="Это - БОМБА!"><img class="price__rating-star" src="./assets/images/photosession/rating-star.svg" alt="#"></a>
 
-                        <a href="#3" title="Нууу, можно разок прокатиться...">★</a>
+                        <a href="#3" title="Нууу, можно разок прокатиться..."><img class="price__rating-star" src="./assets/images/photosession/rating-star.svg" alt="#"></a>
 
-                        <a href="#2" title="Нет уж, давайте-ка теперь без меня...">★</a>
+                        <a href="#2" title="Нет уж, давайте-ка теперь без меня..."><img class="price__rating-star" src="./assets/images/photosession/rating-star.svg" alt="#"></a>
 
-                        <a href="#1" title="Что это вообще было???">★</a>
+                        <a href="#1" title="Это что вообще было???"><img class="price__rating-star" src="./assets/images/photosession/rating-star.svg" alt="#"></a>
 
                     </div>
 
@@ -617,17 +619,33 @@
 
                         <p class="testimonials__profession">Арт-директор</p>
 
-                        <div class="rating testimonials__rating-one">
+                        <div class="rating-group">
 
-                            <a href="#5" title="FANTASTICO IRREALE !!!">★</a>
+                            <input disabled checked class="rating__input rating__input--none" name="rating3"
+                                id="rating3-none" value="0" type="radio">
 
-                            <a href="#4" title="Это - БОМБА!">★</a>
+                            <label aria-label="1 star" class="rating__label" for="rating3-1"
+                                title="Это что вообще было???"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
 
-                            <a href="#3" title="Нууу, можно разок прокатиться...">★</a>
+                            <label aria-label="2 stars" class="rating__label" for="rating3-2"
+                                title="Нет уж, давайте-ка теперь без меня..."><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
 
-                            <a href="#2" title="Нет уж, давайте-ка теперь без меня...">★</a>
+                            <label aria-label="3 stars" class="rating__label" for="rating3-3"
+                                title="Нууу, можно разок прокатиться..."><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
 
-                            <a href="#1" title="Что это вообще было???">★</a>
+                            <label aria-label="4 stars" class="rating__label" for="rating3-4" title="Это - БОМБА!"><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+
+                            <label aria-label="5 stars" class="rating__label" for="rating3-5"
+                                title="FANTASTICO IRREALE !!!"><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
 
                         </div>
 
@@ -660,17 +678,34 @@
 
                         <p class="testimonials__profession">Фотограф</p>
 
-                        <div class="rating testimonials__rating-two">
+                        <div class="rating-group">
 
-                            <a href="#5" title="FANTASTICO IRREALE !!!">★</a>
+                            <input disabled checked class="rating__input rating__input--none" name="rating4"
+                                id="rating4-none" value="0" type="radio">
 
-                            <a href="#4" title="Это - БОМБА!">★</a>
+                            <label aria-label="1 star" class="rating__label" for="rating4-1"
+                                title="Это что вообще было???"><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating4" id="rating4-1" value="1" type="radio">
 
-                            <a href="#3" title="Нууу, можно разок прокатиться...">★</a>
+                            <label aria-label="2 stars" class="rating__label" for="rating4-2"
+                                title="Нет уж, давайте-ка теперь без меня..."><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating4" id="rating4-2" value="2" type="radio">
 
-                            <a href="#2" title="Нет уж, давайте-ка теперь без меня...">★</a>
+                            <label aria-label="3 stars" class="rating__label" for="rating4-3"
+                                title="Нууу, можно разок прокатиться..."><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating4" id="rating4-3" value="3" type="radio">
 
-                            <a href="#1" title="Что это вообще было???">★</a>
+                            <label aria-label="4 stars" class="rating__label" for="rating4-4" title="Это - БОМБА!"><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating4" id="rating4-4" value="4" type="radio">
+
+                            <label aria-label="5 stars" class="rating__label" for="rating4-5"
+                                title="FANTASTICO IRREALE !!!"><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating4" id="rating4-5" value="5" type="radio">
 
                         </div>
 
@@ -706,17 +741,34 @@
                         <!-- <img class="testimonials__rating-three" src="./assets/images/testimonials/starblock.svg"
                             title="Ваша оценка"> -->
 
-                        <div class="rating testimonials__rating-three">
+                        <div class="rating-group rating-group-5">
 
-                            <a href="#5" title="FANTASTICO IRREALE !!!">★</a>
+                            <input disabled checked class="rating__input rating__input--none" name="rating5"
+                                id="rating5-none" value="0" type="radio">
 
-                            <a href="#4" title="Это - БОМБА!">★</a>
+                            <label aria-label="1 star" class="rating__label" for="rating5-1"
+                                title="Это что вообще было???"><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating5" id="rating5-1" value="1" type="radio">
 
-                            <a href="#3" title="Нууу, можно разок прокатиться...">★</a>
+                            <label aria-label="2 stars" class="rating__label" for="rating5-2"
+                                title="Нет уж, давайте-ка теперь без меня..."><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating5" id="rating5-2" value="2" type="radio">
 
-                            <a href="#2" title="Нет уж, давайте-ка теперь без меня...">★</a>
+                            <label aria-label="3 stars" class="rating__label" for="rating5-3"
+                                title="Нууу, можно разок прокатиться..."><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating5" id="rating5-3" value="3" type="radio">
 
-                            <a href="#1" title="Что это вообще было???">★</a>
+                            <label aria-label="4 stars" class="rating__label" for="rating5-4" title="Это - БОМБА!"><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating5" id="rating5-4" value="4" type="radio">
+
+                            <label aria-label="5 stars" class="rating__label" for="rating5-5"
+                                title="FANTASTICO IRREALE !!!"><i
+                                    class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            <input class="rating__input" name="rating5" id="rating5-5" value="5" type="radio">
 
                         </div>
 
@@ -754,7 +806,7 @@
 
     </section>
 
-    <section class="footer">
+    <footer class="footer">
 
         <h2 hidden>О нас.</h2>
 
@@ -913,8 +965,9 @@
 
         </div>
 
-    </section>
+    </footer>
 
+    <script src="https://kit.fontawesome.com/2de0dd6c2c.js" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
