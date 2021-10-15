@@ -367,17 +367,17 @@
     }
 
     &__rating {
-        margin-left: 45px;
+        margin-left: 60px;
 
         @media screen and (min-width: 576px) {
             position: absolute;
             top: 0;
             left: 0;
-            transform: translate(281px, 33px);
+            transform: translate(281px, 35px);
         }
 
         @media screen and (min-width: 768px) {
-            transform: translate(291px, 32px);
+            transform: translate(291px, 35px);
         }
     }
 
