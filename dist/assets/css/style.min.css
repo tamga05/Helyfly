@@ -385,6 +385,48 @@ body {
   }
 }
 
+.rating {
+  width: 115px;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+.rating input {
+  float: right;
+  opacity: 0;
+  position: absolute;
+}
+
+.rating a,
+.rating label {
+  float: right;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover,
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a {
+  color: #FC9B09;
+  cursor: pointer;
+}
+
+.rating2 {
+  direction: rtl;
+}
+
+.rating2 a {
+  float: none;
+}
+
+.rating > a {
+  color: #FC9B09;
+}
+
 /*
  *  Pure CSS star rating that works without reversing order
  *  of inputs
@@ -963,6 +1005,7 @@ body {
   width: 19px;
   height: 19px;
   padding-right: 2px;
+  transform: translateX(-20px);
 }
 .photosession__span {
   font-size: 14px;
@@ -1707,19 +1750,19 @@ hr {
   }
 }
 .price__rating {
-  margin-left: 60px;
+  margin-left: 40px;
 }
 @media screen and (min-width: 576px) {
   .price__rating {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(281px, 35px);
+    transform: translate(281px, 33px);
   }
 }
 @media screen and (min-width: 768px) {
   .price__rating {
-    transform: translate(291px, 35px);
+    transform: translate(291px, 33px);
   }
 }
 .price__rating-star {

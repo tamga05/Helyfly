@@ -992,9 +992,6 @@ body {
             transform: translateY(10px);
   }
 }
-.photosession__rating {
-  margin-left: -15px;
-}
 @media screen and (min-width: 576px) {
   .photosession__rating {
     position: absolute;
@@ -1787,21 +1784,21 @@ hr {
   }
 }
 .price__rating {
-  margin-left: 45px;
+  margin-left: 60px;
 }
 @media screen and (min-width: 576px) {
   .price__rating {
     position: absolute;
     top: 0;
     left: 0;
-    -webkit-transform: translate(281px, 33px);
-            transform: translate(281px, 33px);
+    -webkit-transform: translate(281px, 35px);
+            transform: translate(281px, 35px);
   }
 }
 @media screen and (min-width: 768px) {
   .price__rating {
-    -webkit-transform: translate(291px, 32px);
-            transform: translate(291px, 32px);
+    -webkit-transform: translate(291px, 35px);
+            transform: translate(291px, 35px);
   }
 }
 .price__rating-star {
