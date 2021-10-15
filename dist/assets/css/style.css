@@ -467,8 +467,8 @@ body {
 /* set icon padding and size */
 .rating__label {
     cursor: pointer;
-    padding: 0 0.1em;
-    font-size: 24px;
+    padding-right: 2px;
+    font-size: 15px;
 }
 
 /* set default star color */
@@ -489,6 +489,10 @@ body {
 /* make hovered input's following siblings grey on hover */
 .rating__input:hover ~ .rating__label .rating__icon--star {
   color: #aaa;
+}
+
+.rating-group-5 {
+  margin-top: 20px;
 }
 
 .header {
@@ -1041,6 +1045,11 @@ body {
     -webkit-transform: translateX(220px);
             transform: translateX(220px);
   }
+}
+.photosession__rating-star {
+  width: 19px;
+  height: 19px;
+  padding-right: 2px;
 }
 .photosession__span {
   font-size: 14px;
@@ -1827,8 +1836,8 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
-    -webkit-transform: translate(281px, 32px);
-            transform: translate(281px, 32px);
+    -webkit-transform: translate(281px, 33px);
+            transform: translate(281px, 33px);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1836,6 +1845,11 @@ hr {
     -webkit-transform: translate(291px, 32px);
             transform: translate(291px, 32px);
   }
+}
+.price__rating-star {
+  width: 19px;
+  height: 19px;
+  padding-right: 2px;
 }
 
 .map__wrapper {
@@ -2277,6 +2291,7 @@ hr {
   line-height: 19.5px;
   color: #37373F;
   margin-top: 5px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .testimonials__cite-three {
@@ -2341,8 +2356,8 @@ hr {
 }
 @media screen and (min-width: 768px) {
   .testimonials__more-three {
-    -webkit-transform: translate(280px, -51px);
-            transform: translate(280px, -51px);
+    -webkit-transform: translate(280px, -74px);
+            transform: translate(280px, -74px);
     width: 280px;
   }
 }

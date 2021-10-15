@@ -373,11 +373,17 @@
             position: absolute;
             top: 0;
             left: 0;
-            transform: translate(281px, 32px);
+            transform: translate(281px, 33px);
         }
 
         @media screen and (min-width: 768px) {
             transform: translate(291px, 32px);
         }
+    }
+
+    &__rating-star {
+        width: 19px;
+        height: 19px;
+        padding-right: 2px;
     }
 }
