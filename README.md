@@ -6,4 +6,4 @@ It is best to enjoy the unique nature and futuristic design of the greatest metr
 
 Let's Fly ???))) 🚁🚁🚁
 
-<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/tamga05/Helyfly?style=flat-square">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/tamga05/Helyfly?style=flat-square" height="27">
